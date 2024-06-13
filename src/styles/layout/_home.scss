@@ -1,0 +1,88 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+// --------------- HOME
+.hero{
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  height: 100vh;
+
+  &_resources{
+    background-image: url(../../../public/resources/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:right;
+    padding: 2.7rem 8rem 2rem 0;
+  }
+
+    &_btn-contact {
+      @include m.buttom-green;
+    }
+    
+    &_value-proposal{
+      margin-top: 5.5rem;
+    }
+
+    &_title {
+      line-height: 5.4rem;
+      width: fit-content;
+    }
+  
+    &_container-t {
+      display: flex;
+    }
+
+  &_title-d{
+    font-family: v.$font-secundary;
+    font-size: 1.6em;
+    color: v.$principal;   
+    width: fit-content; 
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: 1rem;
+  }
+
+  &_title-d::before{
+    content: "";
+    position: relative;
+    background: v.$green;
+    height: 15px;
+    top: 5rem;
+    z-index: -1;
+  }
+
+
+  &_icon-caracol{
+    width: 5.5rem;
+  }
+
+  &_description{
+    padding-top: 1.8rem;
+  }
+
+  &_cta{
+    margin-top: 5rem;
+    @include m.buttom-blue
+  }
+}
+
+
+
+//MEDIAS QUERIES 
+
+@include m.desktop {}
+
+@include m.tablet {}
+
+@include m.movil {}
+
+
+
+
+
+
+
+
+

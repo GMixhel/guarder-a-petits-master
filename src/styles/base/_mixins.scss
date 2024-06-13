@@ -1,0 +1,96 @@
+@use 'variables' as v;
+
+
+// Mixin para las media queries
+@mixin movil {
+    @media (max-width: v.$movil){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: v.$desktop){
+        @content;
+    }
+}
+
+
+//Para grid simples
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+//Reset lista
+@mixin reset-lista{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+
+//Mixin personalizados segun las necesidades de la pagina
+
+@mixin titleHero {
+    font-size: 5.5em;
+    line-height: 0.9em;
+    font-family: v.$font-principal;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@mixin titleName{
+    font-size: 5em;
+    line-height: 0.9em;
+    font-family: v.$font-principal;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: 0.5rem;
+}
+
+@mixin buttom-blue {
+    color: v.$principal;
+    background: rgb(183, 239, 255);
+    background: linear-gradient(180deg, rgba(183, 239, 255, 1) 0%, rgba(204, 244, 255, 1) 100%);
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    font-family: v.$font-principal;
+    cursor: pointer;
+    border-bottom: solid 0.4rem v.$principal;
+    -webkit-box-shadow: 0px 9px 5px 0px rgba(4, 131, 166, 0.16);
+    -moz-box-shadow: 0px 9px 5px 0px rgba(4, 131, 166, 0.16);
+    box-shadow: 0px 9px 5px 0px rgba(4, 131, 166, 0.16);
+    padding: 1.3rem 2rem;
+    border-radius: 3rem;
+    width: fit-content;
+    height: fit-content;
+
+}
+@mixin buttom-green {
+    color: v.$secundary;
+    background: rgb(223, 238, 146);
+    background: linear-gradient(180deg, rgba(223, 238, 146, 1) 0%, rgba(248, 255, 212, 1) 100%);
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    font-family: v.$font-principal;
+    cursor: pointer;
+    border-bottom: solid 0.4rem v.$secundary;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(136, 149, 67, 0.32);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(136, 149, 67, 0.32);
+    box-shadow: 0px 10px 5px 0px rgba(136, 149, 67, 0.32);
+    padding: 1.3rem 2rem;
+    border-radius: 3rem;
+    width: fit-content;
+    height: fit-content;
+}
+

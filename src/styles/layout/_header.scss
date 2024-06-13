@@ -1,0 +1,36 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        width: 7rem;
+        padding: 3rem 0;
+    }
+}
+
+.nav {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem ;
+   
+
+    &__item{
+        font-size: 1.5em;
+        color: v.$p;
+    }
+}
+
+
+//MEDIAS QUERIES 
+
+@include m.desktop {}
+
+@include m.tablet {}
+
+@include m.movil {}
