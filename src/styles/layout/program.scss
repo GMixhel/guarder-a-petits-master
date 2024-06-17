@@ -1,0 +1,89 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+// --------------- PROGRAM
+.program{
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem auto;
+   
+
+    &_description--container   {
+            padding-bottom: 8rem;
+            position: sticky;
+            top: 18rem;
+    }
+
+    &_title{
+        margin-top: 10rem; 
+    }
+
+    &_areas{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    &_card-container{
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    &_card {
+            padding: 8rem 7rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            //border-radius: 5rem 3rem 14rem 18rem / 17rem 18rem 9rem 4rem;
+        }
+
+    &_card--1{
+        background-image: url(../../images/petits-card.svg);
+        position: sticky;
+        top: 5rem;
+        z-index: -1;
+    
+    }
+    &_card--2{
+        background-image: url(../../images/petits-card-blue.svg );
+        position: sticky;
+        top: 8rem;
+        z-index: -1;
+    
+    }
+    &_card--3{
+        background-image: url(../../images/petits-card.svg );
+        position: sticky;
+        top: 10rem;
+        z-index: -1;
+    }
+
+    &_name{
+        color: v.$secundary;
+        font-weight: 700;
+        margin-bottom: 3rem;
+     
+    }
+    &_name--2{
+        color: v.$principal;     
+    }
+
+    &_details{
+        line-height: 2.5rem;
+    }
+}
+
+
+
+//MEDIAS QUERIES EMAIL
+
+@include m.desktop {}
+
+@include m.tablet {}
+
+@include m.movil {}

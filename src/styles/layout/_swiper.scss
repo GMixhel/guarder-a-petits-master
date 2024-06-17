@@ -1,0 +1,37 @@
+
+.swiper-slide img{
+    height: 37rem;
+    object-fit: cover;
+    border-radius: 3rem;
+  
+}
+.swiper-slide{
+    height: 40rem;
+}
+.slide {
+z-index: -1;
+}
+
+.swiper_container{
+    margin-top: -5rem;
+}
+
+.slide_emoji{
+    z-index: 2;
+
+}
+
+ .slide_emoji--carita{
+    width: 12rem;
+    position: sticky;
+    margin-left: 30%;
+}
+ .slide_emoji--bebe{
+    margin-top: -8rem;
+    width: 15rem;
+    position: sticky;
+    margin-left: 60%;
+}
+
+
+

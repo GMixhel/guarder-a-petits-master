@@ -5,13 +5,15 @@
 // --------------- HOME
 .hero{
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 1.2fr;
   height: 100vh;
+ 
+
 
   &_resources{
     background-image: url(../../../public/resources/hero-image.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     display: flex;
     justify-content:right;
     padding: 2.7rem 8rem 2rem 0;
@@ -22,7 +24,7 @@
     }
     
     &_value-proposal{
-      margin-top: 5.5rem;
+      margin-top: 4.5rem;;
     }
 
     &_title {
@@ -65,6 +67,38 @@
   &_cta{
     margin-top: 5rem;
     @include m.buttom-blue
+  }
+}
+
+.social{
+  background-color: v.$green;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 5rem;
+  }
+
+  &_icon{
+    width: 3rem;
+    fill: v.$blue;
+    margin-right: 0.7rem;
+  }
+
+  &_name{
+    font-weight: 700;
+    color: v.$principal;
   }
 }
 

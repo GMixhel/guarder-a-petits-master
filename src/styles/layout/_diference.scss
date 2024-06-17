@@ -1,0 +1,50 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+// --------------- Diference
+
+.diference{
+    width: 85%;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem   ;
+
+    &_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center ;
+        padding: 3rem;
+        background-color: v.$blue;
+        border-radius: 5rem / 3rem 7rem 5rem 3rem;
+
+    }
+
+    &_title{
+       text-align: left;
+       width: 100%;
+       color: v.$principal;
+       font-weight: 600;
+    }
+
+    &_icon{
+        width: 5rem;
+    }
+
+    &_details{
+        padding: 5rem 0;
+    }
+}
+
+
+
+//MEDIAS QUERIES EMAIL
+
+@include m.desktop {}
+
+@include m.tablet {}
+
+@include m.movil {}

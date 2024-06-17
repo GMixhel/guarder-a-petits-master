@@ -1,0 +1,59 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.values{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    &_boxes{
+        display: flex;
+    }
+
+    &_child--4{
+        width: 9rem;
+        height: 9rem;
+    }
+    &_child--3{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    &_child--1{
+        width: 6rem;
+        height: 6rem;
+    }
+    &_child--2{
+        width: 12rem;
+        height: 12rem;
+        margin-top: 3rem;
+    }
+    &_boxes-1{
+        width: 75%;
+        justify-content: space-between;
+    }
+    &_boxes-2{
+       gap: 3.5rem ;
+       margin-top: 5rem;
+    }
+     
+    &_details{
+        text-align: right;
+        color: v.$principal;
+        margin-top: -0.8rem;
+    }
+
+           &_boxes-3 {
+            width: 100%;
+               display: flex;
+               justify-content: space-evenly;
+           }
+}
+
+.waterBrand{
+    width: 20rem ;
+    margin-top: -13rem;
+    opacity: 0.2;
+}
