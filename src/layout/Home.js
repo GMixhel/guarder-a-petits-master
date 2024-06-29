@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header';
 import caracol from "../images/caracol-petits.svg"
 import youtubeIco from "../images/petits-youtube.svg"
@@ -12,8 +12,23 @@ import marcaAgua from "../images/caracol-marca.svg"
 import Program from './Program';
 import Slide from './Slide';
 import Diference from './Diference';
+import Testimonials from './Testimonials';
+import Footer from '../components/Footer';
+import Lenis from 'lenis';
 
 const Home = () => {
+  // //---smooth scroll with Lenis
+   useEffect(() => {
+     const lenis = new Lenis()
+     function raf(time){
+       lenis.raf(time)
+       requestAnimationFrame(raf)
+     }
+
+      requestAnimationFrame(raf);
+   }, [])
+
+   
   return (
     <>
       <div className="hero">
@@ -100,10 +115,10 @@ const Home = () => {
         </div>
 
         <div className="values_boxes values_boxes-2">
-          <h3 className="values_details">
+          <h4 className="values_details">
             Cubrimos todas las áreas <br /> claves de aprendizaje y <br />
             desarrollo para los bebés
-          </h3>
+          </h4>
 
           <p className="values_resume">
             En Petits, entendemos que cada niño tiene su propio <br /> ritmo y
@@ -131,14 +146,21 @@ const Home = () => {
         </div>
       </div>
 
-      <img src={marcaAgua} alt="imagen de un caracol dibujado" className="waterBrand" />
+      <img
+        src={marcaAgua}
+        alt="imagen de un caracol dibujado"
+        className="waterBrand"
+      />
 
       <Program />
 
       <Slide />
 
+      <Testimonials />
+
       <Diference />
 
+      <Footer />
     </>
   );
 }

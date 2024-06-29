@@ -34,13 +34,21 @@ h2 {
 
 h3 {
     color: v.$p;
-    font-size: 2.8em;
+    font-size: 3.8em;
     font-weight: 400;
-    line-height: 1.4em;
+    line-height: 1.2em;
     font-family: v.$font-principal;
 }
 
 h4 {
+    color: v.$p;
+    font-size: 2.8em;
+    font-weight: 400;
+    font-family: v.$font-principal;
+    line-height: 1.4em;
+}
+
+h5 {
     color: v.$p;
     font-size: 2em;
     font-weight: 400;

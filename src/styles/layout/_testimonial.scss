@@ -1,0 +1,109 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.testimonials{
+    background-image: url(../../images/petits-background-testimonial.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+    padding: 15rem 0  20rem 0;
+    background-position: 50%;
+
+
+    &_container{
+        width: 85%;
+        margin: 0 auto;
+    }
+    &_title{
+        padding-bottom: 2rem;
+    }
+    &_img{
+        width: 10rem;
+    }
+        &_comas {
+            font-size: 10rem;
+            height: 6rem;
+            margin-bottom: 3rem;
+    
+            color: v.$secundary;
+        }
+
+    &_boxes-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem   ;
+    }
+
+    &_testimonials{
+        font-size: 1.3em;
+    }
+
+    &_box{
+       padding: 2rem;
+        background: rgba(255, 255, 255, 0.845);
+        border-radius: 1rem;
+        height: fit-content;
+    }
+
+    &_box-grid1{
+        grid-column: 3/4;
+    }
+    &_box-grid6{
+        margin-top: 20rem;
+    }
+    &_box-grid5{
+        margin-top: 10rem;
+    }
+    &_box-grid4{
+        margin-top: -17.5rem;
+    }
+    &_box-grid1{
+        margin-top: -46.3rem;
+    }
+    &_box-grid2{
+        margin-top: -28.8rem;
+    }
+    &_btn{
+        width: 100%;
+        display: flex;
+        justify-content: center
+    }
+    &_cta{
+        @include m.buttom-blue;
+    }
+
+    &_person{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+       
+    }
+
+    &_user{
+        font-weight: 700;
+            color: v.$secundary;
+    }
+
+    &_avatar{
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.2em;
+        font-weight: 700;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: v.$green;
+        color: v.$secundary;
+        margin-right: 1rem;
+    }
+
+
+}
+
+.five-line{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    overflow: hidden;
+}

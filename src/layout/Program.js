@@ -21,7 +21,7 @@ const Program = () => {
         <div className="program_areas">
           <div className="program_card-container">
             <div className="program_card program_card--1">
-              <h4 className="program_name">Conocimiento de Sí Mismo</h4>
+              <h5 className="program_name">Conocimiento de Sí Mismo</h5>
               <p className="program_details">
                 En esta área, los niños empiezan a explorar <br /> su identidad,
                 descubriendo quiénes son y <br /> desarrollando una autoestima
@@ -35,9 +35,9 @@ const Program = () => {
 
           <div className="program_card-container">
             <div className="program_card program_card--2">
-              <h4 className="program_name program_name--2">
+              <h5 className="program_name program_name--2">
                 Conocimiento del Entorno
-              </h4>
+              </h5>
               <p className="program_details">
                 Fomentamos la curiosidad innata de los niños, <br />animándolos a
                 explorar y descubrir todo lo que <br /> los rodea, desde su entorno
@@ -50,9 +50,9 @@ const Program = () => {
 
           <div className="program_card-container">
             <div className="program_card program_card--3">
-              <h4 className="program_name program_name--3">
+              <h5 className="program_name program_name--3">
                 Intercomunicación y Lenguaje
-              </h4>
+              </h5>
               <p className="program_details">
                 A medida que crecen, los niños mejoran sus <br /> habilidades de
                 comunicación. Aquí, <br /> fomentamos un ambiente donde cada día
