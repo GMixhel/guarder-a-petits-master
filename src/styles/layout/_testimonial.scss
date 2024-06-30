@@ -112,3 +112,14 @@
     -webkit-line-clamp: 12;
     overflow: hidden;
 }
+
+@include m.desktop {}
+
+@include m.tablet {}
+
+@include m.movil {
+
+    .testimonials {
+      display: none;
+    }
+}

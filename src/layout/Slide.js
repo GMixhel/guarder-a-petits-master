@@ -18,6 +18,12 @@ import slide_image_6 from '../images/swiper_gallery/SwiperGallery_6.jpg'
 import slide_image_7 from '../images/swiper_gallery/SwiperGallery_7.jpg'
 import slide_image_8 from '../images/swiper_gallery/SwiperGallery_8.jpg'
 import slide_image_9 from '../images/swiper_gallery/SwiperGallery_9.jpg'
+import slide_image_10 from '../images/swiper_gallery/SwiperGallery_10.jpg'
+import slide_image_11 from '../images/swiper_gallery/SwiperGallery_11.jpg'
+import slide_image_12 from '../images/swiper_gallery/SwiperGallery_12.jpg'
+import slide_image_13 from '../images/swiper_gallery/SwiperGallery_13.jpg'
+import slide_image_14 from '../images/swiper_gallery/SwiperGallery_14.jpg'
+import slide_image_15 from '../images/swiper_gallery/SwiperGallery_15.jpg'
 import faceIcon from '../images/rayo-de-risa.png'
 import bebeIcon from '../images/bebe.png'
 
@@ -33,7 +39,7 @@ const Slide = () => {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={3}
+          slidesPerView={1.15}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -76,6 +82,24 @@ const Slide = () => {
           </SwiperSlide>
           <SwiperSlide>
             <img src={slide_image_9} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide_image_10} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide_image_11} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide_image_12} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide_image_13} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide_image_14} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide_image_15} alt="slide_image" />
           </SwiperSlide>
         </Swiper>
 

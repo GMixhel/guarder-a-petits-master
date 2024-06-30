@@ -87,4 +87,8 @@
 
 @include m.tablet {}
 
-@include m.movil {}
+@include m.movil {
+    .program{
+        display: none;
+    }
+}

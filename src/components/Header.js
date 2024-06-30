@@ -3,6 +3,8 @@ import { NavLink, useLocation } from 'react-router-dom'
 import logo from '../images/petits-logo.svg'
 import ankor from '../images/Grupo 172.svg'
 import call from '../images/Grupo 171.svg'
+import menuOpen from "../images/Grupo 128.svg";
+import Nav from './Nav'
 
 const Header = () => {
 
@@ -23,68 +25,92 @@ const Header = () => {
         }
       };
     }, []);
-
+  
+const [show, setShow]= useState(false)
  
   const location = useLocation();
 
-
-  console.log(location.pathname);
+  const showMenu = () => {
+    setShow(true)
+  }
   
 
   return (
-    <header
-      className={
-        location.pathname === "/inicio" || "/"
-          ? "header container-hero"
-          : "container-hero-nav"
-      }
-    >
-      <div className="header_nav-container">
-        <img src={logo} className="header__logo" />
-        <div className="header__nav">
-          <ul className="nav">
-            <li className="nav__item">
+    <>
+      <header
+        className={
+          location.pathname === "/inicio" || location.pathname === "/"
+            ? "header container-hero"
+            : "container-hero-nav"
+        }
+      >
+        <div className="header_nav-container">
+          <img src={logo} className="header__logo" />
+
+          <div className="header__nav">
+            <ul className="nav">
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "nav__link nav__active" : "nav__link "
+                  isActive ? "nav__item nav__active" : "nav__item "
                 }
                 to="/inicio"
               >
                 Inicio
               </NavLink>
-            </li>
-            <li className="nav__item">
+
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "nav__link nav__active" : "nav__link "
+                  isActive ? "nav__item nav__active" : "nav__item "
                 }
                 to="/about"
               >
                 Nosotros
               </NavLink>
-            </li>
-            <li className="nav__item">
-              <a href="#">Blog</a>
-            </li>
-          </ul>
+
+              <a className="nav__item" href="#">
+                Blog
+              </a>
+            </ul>
+          </div>
+
+          <img
+            onClick={showMenu}
+            className="header_menuIcon"
+            src={menuOpen}
+            alt="icono de menu"
+          />
         </div>
-      </div>
 
-      <div
-        className={location.pathname === "/inicio" || "/" ? "link_close" : "link_show"}
-      >
-        <a href="#" className="hero_btn-contact ">
-          Contactanos
+        <div
+          className={
+            location.pathname === "/inicio" || location.pathname === "/"
+              ? "link_close"
+              : "link_show"
+          }
+        >
+          <a href="#" className="hero_btn-contact ">
+            Contactanos
+          </a>
+        </div>
+
+        <a href="#" className="home_ankor">
+          <img
+            src={ankor}
+            alt="flecha que indica hacia arriba"
+            className="home_ankor-img"
+          />
         </a>
-      </div>
+        <a href="#" className="home_call">
+          <img
+            src={call}
+            alt="imagen de un telefono"
+            className="home_ankor-img"
+          />
+        </a>
+      </header>
 
-      <a href="#" className="home_ankor">
-        <img src={ankor} alt="flecha que indica hacia arriba" className="home_ankor-img" />
-      </a>
-      <a href="#" className="home_call">
-        <img src={call} alt="imagen de un telefono" className="home_ankor-img" />
-      </a>
-    </header>
+      <Nav show={show} setShow={setShow} />
+    </>
   );
 }
 

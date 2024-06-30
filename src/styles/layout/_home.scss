@@ -8,7 +8,9 @@
   grid-template-columns: 1fr 1.2fr;
   height: 100vh;
  
-
+  &_description--movil{
+    display: none;
+  }
 
   &_resources{
     background-image: url(../../../public/resources/hero-image.png);
@@ -120,7 +122,78 @@
 
 @include m.tablet {}
 
-@include m.movil {}
+@include m.movil {
+
+  .hero {
+    grid-template-columns: 1fr;
+    height: inherit;
+
+    &_value-proposal {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &_resources {
+      display: none;
+    }
+
+    &_img-cont {
+      border-radius: 2rem;
+      margin-top: 3rem;
+
+    }
+
+    &_title-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+
+    }
+
+    &_description--movil {
+      display: block;
+      text-align: center;
+      font-size: 1.3em;
+
+    }
+
+    &_description {
+      display: none;
+    }
+    &_cta{
+      margin-bottom: 5rem;
+    }
+
+
+  }
+
+  .social{
+    &_link{
+      margin: 0;
+      padding: 1rem 0;
+    }
+
+    &_container{
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    &_icon{
+     margin: 0;
+    }
+
+    &_name{
+      display: none;
+    }
+  }
+
+
+}
 
 
 

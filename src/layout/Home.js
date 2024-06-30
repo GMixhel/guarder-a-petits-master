@@ -15,6 +15,7 @@ import Diference from './Diference';
 import Testimonials from './Testimonials';
 import Footer from '../components/Footer';
 import Lenis from 'lenis';
+import heroImg from '../images/swiper_gallery/SwiperGallery_9.jpg';
 
 const Home = () => {
   // //---smooth scroll with Lenis
@@ -57,6 +58,16 @@ const Home = () => {
               momento cuenta. ¡Te esperamos con los <br />
               brazos abiertos!
             </p>
+
+            <p className="hero_description--movil">
+              Ven y descubre Petits, donde cada niño es especial y cada momento
+              cuenta. ¡Te esperamos con los brazos abiertos!
+            </p>
+
+
+            <img src={heroImg} className='hero_img-cont'/>
+            
+            
 
             <a href="#" className="hero_cta">
               ¡Conócenos!
@@ -126,7 +137,7 @@ const Home = () => {
             enseñamos a descubrir sus propias <br /> herramientas para superar
             cada desafíos. Creemos que, <br /> como el caracol, cada niño
             llegará a su meta con <br />
-            confianza y perseverancia, utilizando sus propios recursos <br />{" "}
+            confianza y perseverancia, utilizando sus propios recursos <br />
             para avanzar, paso a paso. ¡Aquí en Petits, cada pequeño <br />
             triunfa a su manera!
           </p>

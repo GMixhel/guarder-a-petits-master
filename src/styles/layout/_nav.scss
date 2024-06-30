@@ -1,0 +1,135 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+ .nav-movil__overlay{
+    display: none;
+ }
+
+@include m.movil{
+    
+        .nav-movil {
+
+            background: v.$blue;
+            margin-top: 0.5rem;
+            width: 95%;
+            border-radius: 1.6rem;
+            height: fit-content;
+            padding: 2rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 3;
+    
+            &_logo{
+                width: 5rem;
+            }
+    
+            &__overlay {
+                display: flex;
+                justify-content: right;
+                background: #373a3f4d;
+                color: v.$principal;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                pointer-events: none;
+                opacity: 0;
+                transform: translateY(-2rem);
+                z-index: 1
+              ;
+            }
+    
+            &__close{
+                margin-top: -1rem;
+            }
+
+            &__nav-movil{
+                margin-top: 2rem;
+            }
+    
+    
+            &__overlay--show {
+                z-index: 4;
+                opacity: 1;
+                transform: translateY(0);
+                pointer-events: all;
+            }
+    
+            &__title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 3rem;
+            }
+    
+            &__details {
+                font-size: 1em;
+                font-family: v.$font-principal;
+                margin: 0;
+                padding-right: 15rem;
+                font-weight: 600;
+            }
+    
+            &__item {
+                margin-bottom: 2.5rem;
+                font-size: 4em;
+                font-weight: 600;
+                font-family: v.$font-principal;
+                color: v.$p;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+               
+            }
+    
+             &__active
+             {
+                color: v.$principal;
+            }
+    
+            &__item:hover {
+                color: #74787f;
+            }
+    
+            &__contact {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+               margin-top: 3rem;
+            }
+    
+            &__mediaLink {
+                font-weight: 400;
+                color: v.$p;
+                font-size: 1.3em;
+                line-height: 1rem;
+             
+    
+            }
+    
+            &__mediaLink--margin {
+                margin-bottom: 1.3rem;
+    
+            }
+
+    
+        }
+
+        .nav-social{
+            margin-top: 6rem;
+            &_container{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &_icon{
+                width: 3rem;
+            }
+        }
+
+   
+}

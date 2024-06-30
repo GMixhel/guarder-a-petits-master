@@ -1,3 +1,5 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .swiper-slide img{
     height: 37rem;
@@ -33,5 +35,25 @@ z-index: -1;
     margin-left: 60%;
 }
 
+@include m.desktop {}
 
+@include m.tablet {}
+
+@include m.movil {
+    .swiper-slide img {
+            height: 25rem;
+            
+        }
+.slide_emoji--carita {
+        width: 6rem;
+        margin-left: 3rem;
+       
+    }
+
+    .slide_emoji--bebe {
+        margin-top: -5rem;
+        width: 10rem;
+       
+    }
+}
 

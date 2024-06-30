@@ -53,3 +53,16 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
   
 }
+
+@include m.desktop {}
+
+@include m.tablet {}
+
+@include m.movil {
+
+  .footer {
+   
+      display: none;
+
+  }
+}
