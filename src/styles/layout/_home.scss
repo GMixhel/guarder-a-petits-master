@@ -22,6 +22,11 @@
     &_btn-contact {
       @include m.buttom-green;
     }
+
+    &_btn-contact:hover{
+      filter: brightness(1.05);
+      transform: scale(1.03);
+    }
     
     &_value-proposal{
       margin-top: 4.5rem;;
@@ -68,6 +73,11 @@
     margin-top: 5rem;
     @include m.buttom-blue
   }
+
+     &_cta:hover {
+       filter: brightness(1.05);
+       transform: scale(1.03);
+     }
 }
 
 .social{

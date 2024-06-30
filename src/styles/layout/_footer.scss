@@ -32,10 +32,16 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
      @include m.buttom-green;
      margin-top: 6rem;
    }
+            &_cta:hover {
+              filter: brightness(1.05);
+              transform: scale(1.03);
+            }
+
+          
  }
 
-.footer{
-    position: relative;
+.footer{ 
+    position: relative; 
     height: 60rem;
 
     &_a{

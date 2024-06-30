@@ -12,10 +12,16 @@ a[id] {
 
 
 // Corregir segun el sitio web
-.container {
+.container-hero {
     width: 70%;
-    max-width: 120rem;
+max-width: 120rem;
     margin: 0 auto;
+}
+
+.container{
+    width: 86%;
+    max-width: 120rem;
+        margin: 0 auto;
 }
 
 p {

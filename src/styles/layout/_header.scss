@@ -5,27 +5,105 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+  
 
     &__logo{
         width: 7rem;
         padding: 3rem 0;
     }
+
+    &_nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
+ .container-hero-nav {
+    margin: 0 auto;
+     width: 86%;
+     display: grid;
+     grid-template-columns: 1fr 1.7fr;
+     align-items: center;
+ }
+
+ .link_show{
+     display: flex;
+     justify-content: end;
+ }
+
+ .link_close{
+    display: none;
+ }
 
 .nav {
     display: flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 4rem ;
-   
+    gap: 4rem;
 
-    &__item{
-        font-size: 1.5em;
-        color: v.$p;
+
+    &__item { 
+        font-size: 1.5em; 
+        color: v.$p; 
+        margin-top: 20px; 
+
+    } 
+
+    &__item::after {
+        content: "";
+        position: relative;
+        background: v.$green;
+        height: 20px;
+        top: -1.4rem;
+        width: 0;
+        z-index: -1;
+        transition: width 0.6s cubic-bezier(0.33, 1, 0.68, 1);
     }
+    
+          &__active{
+            color: v.$secundary;
+          }
+
 }
 
+ .nav__item:hover::after {
+     width: 100%;
+ }
+
+ .home_ankor{
+    position: fixed;
+    opacity: 0;
+    width: 5rem;
+    right: 0;
+    bottom: 0;
+    margin: 5rem;
+    z-index: 5;
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+ }
+
+ .home_ankor:hover{
+    filter: brightness(1.03);
+    scale: 1.3;
+ }
+
+ .home_call{
+    position: fixed;
+    opacity: 0;
+        width: 5rem;
+        left: 0;
+        bottom: 0;
+        margin: 5rem;
+        z-index: 5;
+        transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+ }
+
+  .home_call:hover {
+      filter: brightness(1.03);
+      scale: 1.3;
+  }
 
 //MEDIAS QUERIES 
 

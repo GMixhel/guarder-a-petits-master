@@ -35,7 +35,7 @@ const Home = () => {
         <div className="hero_container">
           <Header />
 
-          <div className="hero_value-proposal container">
+          <div className="hero_value-proposal container-hero">
             <div className="hero_title-box">
               <h2 className="hero_title">
                 Especialistes <br />

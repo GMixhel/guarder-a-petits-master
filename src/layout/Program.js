@@ -3,7 +3,7 @@ import React from 'react'
 const Program = () => {
   return (
     <>
-      <div className="program container">
+      <div className="program container-hero">
         <div className="program_description">
           <div className="program_description--container">
             <h2 className="program_title">

@@ -73,6 +73,7 @@
     border-radius: 1.5rem;
     width: fit-content;
     height: fit-content;
+    transition: all 0.3s cubic-bezier(0.85, 0, 0.15, 1) ;
 }
 
 @mixin buttom-green {
@@ -92,5 +93,6 @@
     border-radius: 1.5rem;
     width: fit-content;
     height: fit-content;
+    transition: all 0.3s cubic-bezier(0.85, 0, 0.15, 1);
 }
 

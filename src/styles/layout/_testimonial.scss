@@ -72,6 +72,11 @@
         @include m.buttom-blue;
     }
 
+           &_cta:hover {
+               filter: brightness(1.05);
+               transform: scale(1.03);
+           }
+
     &_person{
         display: flex;
         align-items: center;

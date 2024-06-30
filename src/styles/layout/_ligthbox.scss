@@ -1,0 +1,110 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.ligthbox{
+  
+    &__container{
+        display: grid;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        margin-top: 5rem;
+        height: 50rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "img1 img2 img3 img3 img3"
+        "img1 img2 img3 img3 img3"
+        "img4 img4 img3 img3 img3"
+        "img4 img4 img3 img3 img3"
+        "img6 img6 img5 img5 img5"
+        "img6 img6 img5 img5 img5"  
+        ;
+    }
+
+
+    &__img{ 
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        object-position: center; 
+        cursor: pointer; 
+        overflow: hidden;
+        border-radius: 1rem;
+    } 
+
+    &__img:hover{ 
+       filter:opacity(0.5);
+        transition: all ease-in-out 0.2s;
+    }
+
+    &__img-1{
+        grid-area: img4;
+    }
+    &__img-2{
+        grid-area: img2;
+    }
+    &__img-3{
+        grid-area: img1;
+    }
+    &__img-4{
+        grid-area: img3;
+    }
+    &__img-5{
+        grid-area: img6;
+    }
+    &__img-6{
+        grid-area: img5;
+    }
+
+    &__container--img{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: 0.7);
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+   
+
+    &__svg{
+        position: absolute;
+        bottom: 2.5rem;    
+       cursor: pointer;
+       fill: aliceblue;
+        height:5rem;
+        width: fit-content;
+    }
+&__svg:hover{
+    fill: rgb(159, 164, 168);
+}
+}
+
+ .move {
+     opacity: 1;
+     pointer-events: auto;
+ }
+
+ .img-show {
+     width: 60%;
+     height: 60%;
+     display: block;
+     object-fit: cover;
+     opacity: 0;
+     transform: scale(0);
+     transition: all .4s cubic-bezier(0.25, 1, 0.5, 1);;
+ }
+
+ .img-show--scale {
+     transform: scale(1);
+     opacity: 1;
+     border-radius: 3rem;
+ }
