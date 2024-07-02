@@ -26,8 +26,36 @@ import slide_image_14 from '../images/swiper_gallery/SwiperGallery_14.jpg'
 import slide_image_15 from '../images/swiper_gallery/SwiperGallery_15.jpg'
 import faceIcon from '../images/rayo-de-risa.png'
 import bebeIcon from '../images/bebe.png'
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 const Slide = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 600px)");
+
+    // Define el manejador para cambios en la media query
+    const handleMediaQueryChange = (event) => {
+      setIsSmallScreen(event.matches);
+    };
+
+    // Escucha los cambios en la media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Verifica el estado inicial de la media query
+    handleMediaQueryChange(mediaQuery);
+
+    // Limpia el listener al desmontar el componente
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
+
+  console.log(isSmallScreen)
+
+  
   return (
       <div className="slider">
         <img
@@ -39,12 +67,12 @@ const Slide = () => {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={1.15}
+          slidesPerView={isSmallScreen ? "1.2" : "3"}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
             depth: 100,
-            modifier: 2.5,
+            modifier: 1,
           }}
           pagination={{ el: ".swiper-pagination", clickable: true }}
           navigation={{

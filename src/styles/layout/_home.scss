@@ -12,6 +12,11 @@
     display: none;
   }
 
+    &_img-cont {
+     display: none;
+
+    }
+
   &_resources{
     background-image: url(../../../public/resources/hero-image.png);
     background-repeat: no-repeat;
@@ -21,11 +26,11 @@
     padding: 2.7rem 8rem 2rem 0;
   }
 
-    &_btn-contact {
+    &_btn-call {
       @include m.buttom-green;
     }
 
-    &_btn-contact:hover{
+    &_btn-call:hover{
       filter: brightness(1.05);
       transform: scale(1.03);
     }
@@ -141,6 +146,7 @@
     }
 
     &_img-cont {
+      display: block;
       border-radius: 2rem;
       margin-top: 3rem;
 

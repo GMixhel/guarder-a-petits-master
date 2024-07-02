@@ -76,8 +76,8 @@ const Home = () => {
         </div>
 
         <div className="hero_resources">
-          <a href="#" className="hero_btn-contact">
-            Contactanos
+          <a href="#" className="hero_btn-call">
+            Contáctanos
           </a>
         </div>
       </div>

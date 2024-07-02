@@ -42,8 +42,16 @@ z-index: -1;
 @include m.movil {
     .swiper-slide img {
             height: 25rem;
+            width: 25rem;
             
         }
+    .swiper-slide  {
+            height: 25rem;
+            width: 25rem;
+            
+        }
+
+
 .slide_emoji--carita {
         width: 6rem;
         margin-left: 3rem;
@@ -55,5 +63,7 @@ z-index: -1;
         width: 10rem;
        
     }
+
+
 }
 

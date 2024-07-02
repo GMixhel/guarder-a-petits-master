@@ -9,8 +9,8 @@ import Nav from './Nav'
 const Header = () => {
 
     useEffect(() => {
-      const up = document.querySelector(".home_ankor");
-      const movil = document.querySelector(".home_call");
+      const up = document.querySelector(".hero_up");
+      const movil = document.querySelector(".hero_call");
 
       window.onscroll = function () {
         let scroll = document.documentElement.scrollTop;
@@ -88,19 +88,19 @@ const [show, setShow]= useState(false)
               : "link_show"
           }
         >
-          <a href="#" className="hero_btn-contact ">
-            Contactanos
+          <a href="#" className="hero_btn-call ">
+            Contáctanos
           </a>
         </div>
 
-        <a href="#" className="home_ankor">
+        <a href="#" className="hero_up">
           <img
             src={ankor}
             alt="flecha que indica hacia arriba"
             className="home_ankor-img"
           />
         </a>
-        <a href="#" className="home_call">
+        <a href="#" className="hero_call">
           <img
             src={call}
             alt="imagen de un telefono"

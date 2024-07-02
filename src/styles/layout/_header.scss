@@ -4,8 +4,7 @@
 .header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;    
 
     &__logo{
         width: 6rem;
@@ -79,7 +78,7 @@
     width: 100%;
 }
 
-.home_ankor {
+.hero_up {
     position: fixed;
     opacity: 0;
     width: 5rem;
@@ -90,12 +89,12 @@
     transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.home_ankor:hover {
+.hero_up:hover {
     filter: brightness(1.03);
     scale: 1.3;
 }
 
-.home_call {
+.hero_call {
     position: fixed;
     opacity: 0;
     width: 5rem;
@@ -106,7 +105,7 @@
     transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.home_call:hover {
+.hero_call:hover {
     filter: brightness(1.03);
     scale: 1.3;
 }
