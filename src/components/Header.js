@@ -19,9 +19,11 @@ const Header = () => {
           up.style.opacity = "1";
           movil.style.transform = "scale(1)";
           movil.style.opacity = "1";
-        } else if (scroll < 300) {
+        } else if (scroll < 500) {
           up.style.transform = "scale(0)";
+           up.style.opacity = "0";
           movil.style.transform = "scale(0)";
+          movil.style.opacity = "0";
         }
       };
     }, []);
@@ -41,7 +43,7 @@ const [show, setShow]= useState(false)
         className={
           location.pathname === "/inicio" || location.pathname === "/"
             ? "header container-hero"
-            : "container-hero-nav"
+            : "header container-hero-nav"
         }
       >
         <div className="header_nav-container">
@@ -88,7 +90,12 @@ const [show, setShow]= useState(false)
               : "link_show"
           }
         >
-          <a href="#" className="hero_btn-call ">
+          <a
+            href="https://wa.me/34696791279"
+            rel="noreferrer"
+            target="_blank"
+            className="hero_btn-call "
+          >
             Contáctanos
           </a>
         </div>
@@ -100,7 +107,12 @@ const [show, setShow]= useState(false)
             className="home_ankor-img"
           />
         </a>
-        <a href="#" className="hero_call">
+        <a
+          href="https://wa.me/34696791279"
+          rel="noreferrer"
+          target="_blank"
+          className="hero_call"
+        >
           <img
             src={call}
             alt="imagen de un telefono"

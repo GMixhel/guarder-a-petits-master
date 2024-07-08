@@ -117,6 +117,16 @@
 @include m.tablet {}
 
 @include m.movil {
+
+     .container-hero-nav{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         background-color: v.$blue;
+     }
+
+
     .header {
         justify-content: center;
         background-color: v.$blue;
@@ -128,6 +138,8 @@
         &_nav-container{
             width: 100%;
         }
+
+       
 
         &__logo {
             width: 7rem;
@@ -142,28 +154,31 @@
 
         &__nav{
             display: none;
-        }
+            }
+            
+            .hero {
+                &_btn-contact {
+                    display: none;
+                }
+            
+                &_up {
+                    width: 3.5rem;
+                    margin: 2rem;
+                }
+            
+                &_call {
+                    width: 3.5rem;
+                    margin: 2rem;
+                }
+            }
+            
+            }
+            
+            
+            }
 
-
-
-    }
 
    
-    }
 
 
-
-    .hero_btn-contact {
-        display: none;
-    }
-
-    .home {
-        &_ankor {
-            display: none;
-        }
-
-        &_call {
-            display: none;
-        }
-    }
 

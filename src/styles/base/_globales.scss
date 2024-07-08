@@ -6,8 +6,8 @@ body {
     overflow-x: hidden;
 }
 
-a[id] {
-    scroll-margin-top: 25rem;
+[id] {
+    scroll-margin-top: 5.5rem;
 }
 
 
@@ -92,8 +92,9 @@ h5 {
 
  @include m.desktop{
 
-        .container{
-            
+        .container-movil{
+            width: 85%;
+            margin: 0 auto;
         }
 
          p {

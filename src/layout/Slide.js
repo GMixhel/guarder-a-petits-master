@@ -7,8 +7,6 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/effect-coverflow";
 
-
-
 import slide_image_1 from '../images/swiper_gallery/SwiperGallery_1.jpg'
 import slide_image_2 from '../images/swiper_gallery/SwiperGallery_2.jpg'
 import slide_image_3 from '../images/swiper_gallery/SwiperGallery_3.jpg'
@@ -82,52 +80,52 @@ const Slide = () => {
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
           spaceBetween={20}
-          className="swiper_container"
+          className="swiper_container-petits"
         >
           <SwiperSlide>
-            <img src={slide_image_1} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_1} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_2} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_2} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_3} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_3} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_4} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_4} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_5} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_5} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_6} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_6} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_7} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_7} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_8} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_8} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_9} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_9} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_10} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_10} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_11} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_11} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_12} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_12} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_13} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_13} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={slide_image_14} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_15} alt="slide_image" />
+            <img  classname="slide_img-petis" src={slide_image_15} alt="slide_image" />
           </SwiperSlide>
         </Swiper>
 

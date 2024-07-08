@@ -8,6 +8,7 @@ import child1 from "../images/petits-1.svg"
 import child2 from "../images/petits-2.svg"
 import child3 from "../images/petits-3.svg"
 import child4 from "../images/petits-4.svg"
+import child5 from "../images/petits-5.svg"
 import marcaAgua from "../images/caracol-marca.svg"
 import Program from './Program';
 import Slide from './Slide';
@@ -19,15 +20,15 @@ import heroImg from '../images/swiper_gallery/SwiperGallery_9.jpg';
 
 const Home = () => {
   // //---smooth scroll with Lenis
-   useEffect(() => {
-     const lenis = new Lenis()
-     function raf(time){
-       lenis.raf(time)
-       requestAnimationFrame(raf)
-     }
+  //  useEffect(() => {
+  //    const lenis = new Lenis()
+  //    function raf(time){
+  //      lenis.raf(time)
+  //      requestAnimationFrame(raf)
+  //    }
 
-      requestAnimationFrame(raf);
-   }, [])
+  //     requestAnimationFrame(raf);
+  //  }, [])
 
    
   return (
@@ -36,7 +37,7 @@ const Home = () => {
         <div className="hero_container">
           <Header />
 
-          <div className="hero_value-proposal container-hero">
+          <div className="hero_value-proposal container-hero container-movil">
             <div className="hero_title-box">
               <h2 className="hero_title">
                 Especialistes <br />
@@ -64,19 +65,21 @@ const Home = () => {
               cuenta. ¡Te esperamos con los brazos abiertos!
             </p>
 
+            <img src={heroImg} className="hero_img-cont" />
 
-            <img src={heroImg} className='hero_img-cont'/>
-            
-            
-
-            <a href="#" className="hero_cta">
+            <a href="#heroKnow" className="hero_cta">
               ¡Conócenos!
             </a>
           </div>
         </div>
 
         <div className="hero_resources">
-          <a href="#" className="hero_btn-call">
+          <a
+            href="https://wa.me/34696791279"
+            rel="noreferrer"
+            target="_blank"
+            className="hero_btn-call"
+          >
             Contáctanos
           </a>
         </div>
@@ -84,7 +87,12 @@ const Home = () => {
 
       <div className="social">
         <div className="social_container">
-          <a href="#" className="social_link">
+          <a
+            href="https://www.facebook.com/people/Petit-Nins/100050922142626/"
+            className="social_link"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img
               className="social_icon"
               src={facebookIco}
@@ -92,7 +100,13 @@ const Home = () => {
             />
             <p className="social_name">facebook</p>
           </a>
-          <a href="#" className="social_link">
+
+          <a
+            href="https://www.youtube.com/channel/UCxUhX95S75dnwxva6muZ0JQ"
+            className="social_link"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img
               className="social_icon"
               src={youtubeIco}
@@ -100,7 +114,13 @@ const Home = () => {
             />
             <p className="social_name">youtube</p>
           </a>
-          <a href="#" className="social_link">
+
+          <a
+            href="https://www.instagram.com/petitnins/"
+            className="social_link"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img
               className="social_icon"
               src={instagramIco}
@@ -111,7 +131,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="values">
+      <div id="heroKnow" className="values container-movil">
         <div className="values_boxes values_boxes-1">
           <img
             src={child4}
@@ -132,14 +152,13 @@ const Home = () => {
           </h4>
 
           <p className="values_resume">
-            En Petits, entendemos que cada niño tiene su propio <br /> ritmo y
-            estilo de aprendizaje. Respetamos estas <br /> diferencias y les
-            enseñamos a descubrir sus propias <br /> herramientas para superar
-            cada desafíos. Creemos que, <br /> como el caracol, cada niño
-            llegará a su meta con <br />
-            confianza y perseverancia, utilizando sus propios recursos <br />
-            para avanzar, paso a paso. ¡Aquí en Petits, cada pequeño <br />
-            triunfa a su manera!
+            En Petits, entendemos que cada niño tiene su propio ritmo y estilo
+            de aprendizaje. Respetamos estas diferencias y les enseñamos a
+            descubrir sus propias herramientas para superar cada desafíos.
+            Creemos que, como el caracol, cada niño llegará a su meta con
+            confianza y perseverancia, utilizando sus propios recursos para
+            avanzar, paso a paso. ¡Aquí en Petits, cada pequeño triunfa a su
+            manera!
           </p>
         </div>
 
@@ -153,6 +172,11 @@ const Home = () => {
             src={child2}
             alt="imagen de un bebé"
             className="value_child values_child--2"
+          />
+          <img
+            src={child5}
+            alt="imagen de un bebé"
+            className="value_child values_child--5"
           />
         </div>
       </div>

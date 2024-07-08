@@ -18,11 +18,11 @@
 
   &_ilustrattion {
       width: 100%;
-      margin-left: 5rem;
+      margin-left: 7rem;
   }
 
    &_img{
-    width: 25rem;
+    width: 20rem;
    }
 
     &_title-d{
@@ -55,5 +55,32 @@
 
  }
 @include m.movil {
+    .about{
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+      margin-bottom: 5rem;
 
+      &_data{
+        justify-content: center;
+        align-items: center;
+      }
+
+      &_title-d{
+        margin: 0;
+        padding-top: 2rem;
+      }
+            &_tilte {
+              font-size: 2em;
+              text-align: center;
+            }
+      
+            &_ilustrattion {
+              margin: 6.5rem 0;
+            }
+
+            &_details{
+              margin-top: -2rem;
+            }
+            }
 }

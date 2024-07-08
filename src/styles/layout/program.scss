@@ -4,10 +4,11 @@
 
 // --------------- PROGRAM
 .program{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
     height: max-content;
     margin: 10rem auto;
+    gap: 5rem   ;
    
 
     &_description--container   {
@@ -40,27 +41,32 @@
             align-items: center;
             background-repeat: no-repeat;
             background-size: cover;
-            //border-radius: 5rem 3rem 14rem 18rem / 17rem 18rem 9rem 4rem;
+            border-radius: 5rem 10rem 15rem  9rem/ 3rem 7rem 5rem 3rem ;
+            background-image: url(../../images/petits-fly.png);
+            background-position: 450px 30px;
+            background-repeat: no-repeat;
+            background-size: contain;
+
         }
 
     &_card--1{
-        background-image: url(../../images/petits-card.svg);
-        position: sticky;
-        top: 5rem;
-        z-index: -1;
-    
-    }
-    &_card--2{
-        background-image: url(../../images/petits-card-blue.svg );
+       background-color: v.$green;
         position: sticky;
         top: 8rem;
         z-index: -1;
     
     }
-    &_card--3{
-        background-image: url(../../images/petits-card.svg );
+    &_card--2{
+        background-color: v.$blue;
         position: sticky;
-      top: 20rem;
+        top: 10rem;
+        z-index: -1;
+    
+    }
+    &_card--3{
+        background-color: v.$green;
+        position: sticky;
+      top: 12rem;
         z-index: -1;
     }
 
@@ -75,7 +81,8 @@
     }
 
     &_details{
-        line-height: 2.5rem;
+        line-height: 2.8rem;
+        font-size: 1.8em;
     }
 }
 
@@ -89,6 +96,39 @@
 
 @include m.movil {
     .program{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+
+        &_description--container {
+                padding-bottom: 3rem;
+                position: sticky;
+                top: 13rem;
+            }
+
+            &_details{
+                font-size: 1.2em;
+                line-height: 2.5rem;
+            }
+        
+
+        &_title{
+            line-height: 3.5rem;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        &_name{
+            font-size: 1.3em;
+            margin-bottom: 1.5rem;
+        }
+
+          &_card {
+            padding: 3rem 2rem;
+            border-radius: 5rem / 3rem 5rem 2rem 3rem;
+        }
     }
 }

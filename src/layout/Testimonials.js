@@ -1,5 +1,6 @@
 import React from 'react'
 import fiveStart from '../images/five-start.svg'
+import TestimonialsSlide from './TestimonialsSlide';
 
 const Testimonials = () => {
   return (
@@ -10,7 +11,7 @@ const Testimonials = () => {
             ¿Que dicen las familias <br /> sobre nosotros?
           </h3>
           <p className="testimonials_description">
-            Breve recopilación de algunos de los testimonios de <br /> nuestros
+            Breve recopilación de algunos de los testimonios de nuestros
             clientes
           </p>
           <img
@@ -24,7 +25,12 @@ const Testimonials = () => {
           <div className="testimonials_box testimonials_box-grid6">
             <div className="testimonials_comas">"</div>
             <p className="testimonials_testimonials five-line">
-              Els meus petits encantats de l'espai tant especial I bonic que té el centre!!!!!. La seva directora té molta cura de la atenció que reben els petits i sobretot d'informar als pares de com estan els nens durant el día, sobretot els primers dies , encara que sempre que necessites saber dels nens, et dóna resposta, un tracte molt proper tan d' ella ( Directora ) com les monitores o mestres que
+              Els meus petits encantats de l'espai tant especial I bonic que té
+              el centre!!!!!. La seva directora té molta cura de la atenció que
+              reben els petits i sobretot d'informar als pares de com estan els
+              nens durant el día, sobretot els primers dies , encara que sempre
+              que necessites saber dels nens, et dóna resposta, un tracte molt
+              proper tan d' ella ( Directora ) com les monitores o mestres que
               hi treballen al centre. Ofereix moltes opcions d'horaris, també
               l'opció de deicmxar al petits per hores ( Bonos) I també fa
               casalets d'estiu, a l'hivern, per setmana Santa......moltes
@@ -38,6 +44,7 @@ const Testimonials = () => {
               <p className="testimonials_user">Lidia Martinez</p>
             </div>
           </div>
+
           <div className="testimonials_box testimonials_box-grid5">
             <div className="testimonials_comas">"</div>
             <p className="testimonials_testimonials">
@@ -54,6 +61,7 @@ const Testimonials = () => {
               <p className="testimonials_user">yessica rodriguez</p>
             </div>
           </div>
+
           <div className="testimonials_box testimonials_box-grid4">
             <div className="testimonials_comas">"</div>
             <p className="testimonials_testimonials">
@@ -68,6 +76,7 @@ const Testimonials = () => {
               <p className="testimonials_user">Pilar Campos</p>
             </div>
           </div>
+
           <div className="testimonials_box testimonials_box-grid3">
             <div className="testimonials_comas">"</div>
             <p className="testimonials_testimonials">
@@ -82,6 +91,7 @@ const Testimonials = () => {
               <p className="testimonials_user">Kristina Torres</p>
             </div>
           </div>
+
           <div className="testimonials_box testimonials_box-grid1">
             <div className="testimonials_comas">"</div>
             <p className="testimonials_testimonials">
@@ -100,6 +110,7 @@ const Testimonials = () => {
               <p className="testimonials_user">JAY Mendez</p>
             </div>
           </div>
+
           <div className="testimonials_box testimonials_box-grid2">
             <h5 className="testimonials_comas">"</h5>
             <p className="testimonials_testimonials">
@@ -117,8 +128,15 @@ const Testimonials = () => {
           </div>
         </div>
 
+        <TestimonialsSlide />
+
         <div className="testimonials_btn">
-          <a href="#" className="testimonials_cta">
+          <a
+            href="https://www.google.com/search?q=Petits%20Cerdanyola%20Rese%C3%B1as&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDcyNDU2tzQ3NDY1MzY0NjQxMN7AyPiKUSogtSSzpFjBObUoJTGvMj8nUSEotTj18MbE4kWseCQB_NZ2k1UAAAA&rldimm=17215379713563131403&tbm=lcl&client=firefox-b-d&hl=es&sa=X&ved=0CCAQ9fQKKABqFwoTCMiX6pTQlocDFQAAAAAdAAAAABAG&biw=1920&bih=947&dpr=1#lkt=LocalPoiReviews"
+            rel="noreferrer"
+            target="_blank"
+            className="testimonials_cta"
+          >
             ¡Ver más!
           </a>
         </div>

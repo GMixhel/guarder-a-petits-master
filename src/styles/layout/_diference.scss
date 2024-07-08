@@ -150,10 +150,72 @@
 @include m.tablet {}
 
 @include m.movil {
-    .diference{
-        display: none;
+    .diference {
+            width: 100%;
+            flex-direction: column;
+            gap: 0;
+            margin-bottom: 0;
+    
+            &_title {
+                font-size: 1.5em;
+            }
+    
+            &_section {
+                font-size: 2.5em;
+            }
+    
+            &_box {
+                padding: 3rem 2rem;
+                width: 100%;
+                border-radius: 0;
+            }
+    
+            &_details {
+                padding: 2rem 0;
+            }
+        }
+    
+        .moments {
+            display: flex;
+            height: max-content;
+            display: block;
+            background-color: v.$green;
+    
+            &_container {
+                width: 85%;
+                padding: 5rem 0;
+                display: flex;
+                flex-direction: column;
+                flex-flow: column-reverse;
+                justify-items: center;
+                align-items: center;
+                gap: 5rem ;
+            }
+
+            &_title{
+                font-size: 3.3em;
+                line-height: 5rem;
+                text-align: center;
+            }
+            &_span{
+             font-size: 1.5em;
+            }
+
+        }
+
+                .video {
+                    &_icon-a {
+        
+                        margin: 2rem 0 0 -2.8rem;
+                        width: 9rem;
+        
+                    }
+        
+                    &_icon-b {
+        
+                        margin: 30rem 0 0 16rem;
+                        width: 7rem;
+        
+                    }
+                }
     }
-    .moments{
-        display: none;
-    }
-}

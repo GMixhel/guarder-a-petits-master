@@ -4,26 +4,95 @@ import footerImg from '../images/message-icon.png'
 const Footer = () => {
   return (
     <footer className="footer  ">
-      <div className='footer_a'>
-            
-              <div className='footer_b'>
-                  
-
-          <div className="footer_contacto">
+      <div className="footer_a">
+        <div className="footer_b">
+          <div className="footer_contact">
             <img
               src={footerImg}
               alt="imagen de mensaje con amor"
               className="footer_img"
             />
-            <h2 className="footer_title">
+            <h4 className="footer_title">
               ¿Tienes alguna consulta o <br /> necesitas más detalles?
-            </h2>
-            <a href="#" className="footer_cta">
+            </h4>
+            <a href="mailto: info@petitscerdanyola.com" className="footer_cta">
               !Contáctanos¡
             </a>
-        </div>
-                  
+          </div>
 
+          <div className="footer_background">
+            <div className="footer_container-details container">
+              <div className="footer_box">
+                <h5 className="footer_subtitle">Detalles de Contacto</h5>
+                <div className="footer_items">
+                  <a
+                    className="footer_link"
+                    href={`mailto:info@petitscerdanyola.com?subject=${encodeURIComponent(
+                      "Mas información"
+                    )}&body=${encodeURIComponent("Hola, queria saber más sobre:")}`}
+                  >
+                    info@petitscerdanyola.com
+                  </a>
+
+                  <p className="footer_p-info">T.936 314 289</p>
+                  <p className="footer_p-info">M.696 791 279</p>
+                </div>
+              </div>
+
+              <div className="footer_box footer_redes">
+                <h5 className="footer_subtitle">Redes Sociales</h5>
+
+                <div className="footer_items ">
+                  <a
+                    href="https://www.youtube.com/channel/UCxUhX95S75dnwxva6muZ0JQ"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="footer_link"
+                  >
+                    youtube
+                  </a>
+                  <a
+                    href="https://www.instagram.com/petitnins/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="footer_link"
+                  >
+                    instagram
+                  </a>
+                  <a
+                    href="https://www.facebook.com/people/Petit-Nins/100050922142626/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="footer_link"
+                  >
+                    facebook
+                  </a>
+                </div>
+              </div>
+
+              <div className="footer_box">
+                <h5 className="footer_subtitle">Donde estamos Guardería</h5>
+                <div className="footer_items">
+                  <p className="footer_p-info">
+                    L´horari d´atenció 8.00 a 9.00 h - 17.00 a 18.00 h
+                  </p>
+                  <p className="footer_p-info">
+                    C/Escoles ,12 · 080290 Cerdanyola del Vallès
+                  </p>
+                  <p className="footer_p-info">BCN - España</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="footer_privacy">
+            <div className=" flex container">
+              <p className="footer_copyrite">PETITS © Copyright 2024 </p>
+              <a href="#" className="footer_link-privacy">
+                / Política de privacidad
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

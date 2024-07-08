@@ -1,11 +1,10 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-.swiper-slide img{
+.swiper_container-petits img{
     height: 37rem;
     object-fit: cover;
-    border-radius: 3rem;
-  
+    border-radius: 3rem;  
 }
 .swiper-slide{
     height: 40rem;
@@ -14,7 +13,7 @@
 z-index: -1;
 }
 
-.swiper_container{
+.swiper_container-petits{
     margin-top: -5rem;
 }
 
@@ -27,9 +26,10 @@ z-index: -1;
     width: 12rem;
     position: sticky;
     margin-left: 30%;
+    transform: translateY(8rem);
 }
  .slide_emoji--bebe{
-    margin-top: -8rem;
+transform: translateY(-8rem);
     width: 15rem;
     position: sticky;
     margin-left: 60%;
@@ -40,7 +40,7 @@ z-index: -1;
 @include m.tablet {}
 
 @include m.movil {
-    .swiper-slide img {
+    .swiper_container-petits img {
             height: 25rem;
             width: 25rem;
             
@@ -53,7 +53,7 @@ z-index: -1;
 
 
 .slide_emoji--carita {
-        width: 6rem;
+        width: 8rem;
         margin-left: 3rem;
        
     }

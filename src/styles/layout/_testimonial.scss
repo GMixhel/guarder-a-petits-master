@@ -9,6 +9,10 @@
     padding: 15rem 0  20rem 0;
     background-position: 50%;
 
+    &_slider{
+        display: none;
+    }
+
 
     &_container{
         width: 85%;
@@ -120,6 +124,45 @@
 @include m.movil {
 
     .testimonials {
-      display: none;
+
+    padding: 5rem 0 8rem 0;
+    &_boxes-container {
+        display: none;
     }
+
+    &_slider{
+        display: block;
+        margin: 5rem 0 3rem 0;
+    }
+
+    &_title{
+        font-size: 2em;
+    }
+
+    &_testimonials{
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    &_box{
+        padding-bottom: -3rem;
+    }
+
+    &_comas{
+        font-size: 8em;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.five-line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    overflow: hidden;
+}
+
+.swiper-pagination{
+    margin-top: 3rem;
+}
 }

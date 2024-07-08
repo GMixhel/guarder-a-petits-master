@@ -8,10 +8,17 @@
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
+
+    &_resume {
+           width: 35% ;
+        }
     &_boxes{
         display: flex;
     }
 
+    &_child--5{
+        display: none;
+    }
     &_child--4{
         width: 9rem;
         height: 9rem;
@@ -37,6 +44,7 @@
     &_boxes-2{
        gap: 3.5rem ;
        margin-top: 5rem;
+       justify-content: center;
     }
      
     &_details{
@@ -50,6 +58,8 @@
                display: flex;
                justify-content: space-evenly;
            }
+
+                  
 }
 
 .waterBrand{
@@ -57,3 +67,57 @@
     margin-top: -13rem;
     opacity: 0.2;
 }
+
+
+@include m.desktop {}
+
+@include m.tablet {}
+
+@include m.movil {
+    .values{
+        width: 85%;
+        margin: 0 auto;
+
+        &_child--5{
+            display: block;
+            width: 20rem;
+            margin-bottom: 5rem;
+        }
+        &_child--1{
+            display: none;
+        }
+        &_child--2{
+            display: none;
+        }
+        &_child--3{
+            display: none;
+        }
+        &_child--4{
+            display: none;
+        }
+
+        &_boxes-2{
+            flex-direction: column;
+            margin-top: 5rem;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &_details{
+            font-size: 1.8em;
+            text-align: left;
+    
+        }
+
+        &_resume{
+            width: 100%;
+        }
+
+    }
+
+
+        .waterBrand {
+            display: none;
+        }
+}
+

@@ -46,17 +46,17 @@ const About = () => {
         </div>
       </div>
 
-      <section className="local container">
-        <h4 className="local_title">
+      <section className="local container ">
+        <h4 className="local_title ">
           Explora nuestras amplias y coloridas instalaciones diseñadas para
-          <br />
           grantizar el aprendizaje y la diversión en un entorno seguro
         </h4>
-
-        <Gallery />
       </section>
-      <Team />
+
+      <Gallery />
       
+      <Team />
+
       <Footer />
     </>
   );

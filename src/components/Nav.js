@@ -93,12 +93,12 @@ const Nav = ({ show, setShow }) => {
               </li>
               <li className="nav-movil__media">
                 <p className="nav-movil__mediaLink nav-movil__mediaLink--margin">
-                  C/Escoles ,12 · Cerdanyola 
+                  C/Escoles ,12 · Cerdanyola
                 </p>
               </li>
               <li className="nav-movil__media">
                 <p className="nav-movil__mediaLink nav-movil__mediaLink--margin">
-                 080290 BCN
+                  080290 BCN
                 </p>
               </li>
             </ul>
@@ -106,21 +106,36 @@ const Nav = ({ show, setShow }) => {
 
           <div className="nav-social">
             <div className="nav-social_container">
-              <a href="#" className="nav-social_link">
+              <a
+                href="https://www.facebook.com/people/Petit-Nins/100050922142626/"
+                className="nav-social_link"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <img
                   className="nav-social_icon"
                   src={facebookIco}
                   alt="red nav-social facebook"
                 />
               </a>
-              <a href="#" className="nav-social_link">
+              <a
+                href="https://www.youtube.com/channel/UCxUhX95S75dnwxva6muZ0JQ"
+                className="nav-social_link"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <img
                   className="nav-social_icon"
                   src={youtubeIco}
                   alt="red nav-social youtube"
                 />
               </a>
-              <a href="#" className="nav-social_link">
+              <a
+                href="https://www.instagram.com/petitnins/"
+                className="nav-social_link"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <img
                   className="nav-social_icon"
                   src={instagramIco}

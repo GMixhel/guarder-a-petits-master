@@ -63,3 +63,39 @@
             color: v.$secundary; 
     } 
 } 
+
+@include m.desktop {}
+
+@include m.tablet {}
+
+@include m.movil {
+    .team{
+        margin-top: 5rem;
+
+        &_container{
+            width: 95%;
+        }
+
+        &_title{
+            padding-top: 0;
+            padding-bottom: 3rem;
+        }
+
+        &_info{
+            flex-direction: column;
+        align-items: start;
+        }
+
+        &_img{
+            width: 8rem;
+            height:8rem;
+            margin: 0; 
+            margin-left: 1.8rem;   
+            z-index: 1;   
+        }
+        &_member-data{
+            height: 100%;
+            margin-top: -1.5rem;
+        }
+    }
+}

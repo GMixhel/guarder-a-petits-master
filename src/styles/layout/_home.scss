@@ -105,6 +105,11 @@
     justify-content: center;
     align-items: center;
     margin: 1rem 5rem;
+    transition: all 0.3s cubic-bezier(0.5, 1, 0.89, 1) ;
+  }
+
+  &_link:hover{
+   transform: scale(1.05);
   }
 
   &_icon{
@@ -133,8 +138,11 @@
     grid-template-columns: 1fr;
     height: inherit;
 
+    &_btn-call {
+        display: none;
+      }
+
     &_value-proposal {
-      width: 95%;
       display: flex;
       justify-content: center;
       align-items: center;
