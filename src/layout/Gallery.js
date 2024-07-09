@@ -8,60 +8,143 @@ const Gallery = () => {
 
   const imgShow = (e) => {
     setSrc(e.target.id)
+    console.log(src)
     setShow(true)
+
+     const body = document.querySelector("body");
+     body.classList.add("fixModal");
 
   }
 
   const closeShow = () => {
-      setShow(false)
+    setShow(false)
+    
+     const body = document.querySelector("body");
+     body.classList.remove("fixModal");
   }
+
+ 
 
 
   return (
     <>
       <div className="ligthbox__container container">
-        <img
-          id="modern-style-1"
-          onClick={imgShow}
-          src="/local-gallery/modern-style-1.jpg"
-          alt=""
-          className="ligthbox__img ligthbox__img-1"
-        />
-        <img
-          id="modern-style-2"
-          onClick={imgShow}
-          src="/local-gallery/modern-style-2.jpg"
-          alt=""
-          className="ligthbox__img ligthbox__img-2"
-        />
-        <img
-          id="modern-style-3"
-          onClick={imgShow}
-          src="/local-gallery/modern-style-3.jpg"
-          alt=""
-          className="ligthbox__img ligthbox__img-3"
-        />
-        <img
-          id="modern-style-4"
-          onClick={imgShow}
-          src="/local-gallery/modern-style-4.jpg"
-          alt=""
-          className="ligthbox__img ligthbox__img-4"
-        />
-        <img
-          id="modern-style-5"
-          onClick={imgShow}
-          src="/local-gallery/modern-style-5.jpg"
-          alt=""
-          className="ligthbox__img ligthbox__img-5"
-        />
-        <img
-          id="modern-style-6"
-          onClick={imgShow}
-          src="/local-gallery/modern-style-6.jpg"
-          alt=""
-          className="ligthbox__img ligthbox__img-6"
-        />
+        <picture className="ligthbox__img ligthbox__img-1">
+          <source
+            srcSet="/local-gallery/modern-style-1.avif"
+            type="image/avif"
+          />
+
+          <img
+            onClick={imgShow}
+            id="modern-style-1"
+            loading="lazy"
+            width="300"
+            height="400"
+            src="/local-gallery/modern-style-1.jpg"
+            alt="imagen del local"
+          />
+        </picture>
+
+        <picture className="ligthbox__img ligthbox__img-2">
+          <source
+            srcSet="/local-gallery/modern-style-2.avif"
+            type="image/avif"
+          />
+
+          <img
+            onClick={imgShow}
+            id="modern-style-2"
+            loading="lazy"
+            width="300"
+            height="300"
+            src="/local-gallery/modern-style-2.jpg"
+            alt="imagen del local"
+          />
+        </picture>
+
+        <picture className="ligthbox__img ligthbox__img-3">
+          <source
+            srcSet="/local-gallery/modern-style-3.avif"
+            type="image/avif"
+          />
+
+          <img
+            onClick={imgShow}
+            id="modern-style-3"
+            loading="lazy"
+            width="300"
+            height="300"
+            src="/local-gallery/modern-style-3.jpg"
+            alt="imagen del local"
+          />
+        </picture>
+        <picture className="ligthbox__img ligthbox__img-3">
+          <source
+            srcSet="/local-gallery/modern-style-3.avif"
+            type="image/avif"
+          />
+
+          <img
+            onClick={imgShow}
+            id="modern-style-3"
+            loading="lazy"
+            width="300"
+            height="300"
+            src="/local-gallery/modern-style-3.jpg"
+            alt="imagen del local"
+          />
+        </picture>
+        <picture className="ligthbox__img ligthbox__img-4">
+
+          <img
+            onClick={imgShow}
+            id="modern-style-4"
+            loading="lazy"
+            width="300"
+            height="600"
+            src="/local-gallery/modern-style-4.jpg"
+            alt="imagen del local"
+          />
+        </picture>
+        <picture className="ligthbox__img ligthbox__img-5">
+          <source
+            srcSet="/local-gallery/modern-style-5.avif"
+            type="image/avif"
+          />
+
+          <img
+            onClick={imgShow}
+            id="modern-style-5"
+            loading="lazy"
+            width="500"
+            height="300"
+            src="/local-gallery/modern-style-5.jpg"
+            alt="imagen del local"
+          />
+        </picture>
+        <picture className="ligthbox__img ligthbox__img-6">
+          <source
+            srcSet="/local-gallery/modern-style-6.avif"
+            type="image/avif"
+          />
+
+          <img
+            onClick={imgShow}
+            id="modern-style-6"
+            loading="lazy"
+            width="400"
+            height="300"
+            src="/local-gallery/modern-style-6.jpg"
+            alt="imagen del local"
+          />
+        </picture>
+
+
+
+
+
+        
 
         <div
           onClick={closeShow}
@@ -71,7 +154,7 @@ const Gallery = () => {
         >
           <img
             src={"/local-gallery/" + src + ".jpg"}
-            alt=""
+            alt="Imagen del local"
             className={show ? "img-show img-show--scale" : "img-show"}
           />
 

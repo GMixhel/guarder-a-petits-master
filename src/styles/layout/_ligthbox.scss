@@ -98,10 +98,10 @@
  }
 
  .img-show {
-     width: 60%;
-     height: 60%;
+     width: 80%;
+     height: 80%;
      display: block;
-     object-fit: cover;
+     object-fit: contain;
      opacity: 0;
      transform: scale(0);
      transition: all .4s cubic-bezier(0.25, 1, 0.5, 1);;
@@ -110,7 +110,7 @@
  .img-show--scale {
      transform: scale(1);
      opacity: 1;
-     border-radius: 3rem;
+     border-radius: 1rem;
  }
 
  .swiper_img{
@@ -132,6 +132,10 @@ width: 100%;
 
  .slideImg_container{
     display: none;
+ }
+
+ .fixModal{
+    overflow: hidden;
  }
 
 
