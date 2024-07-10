@@ -70,25 +70,30 @@
 
 @include m.movil {
     .team{
-        margin-top: 5rem;
+        margin-top: 3rem;
 
         &_container{
             width: 95%;
         }
 
+        &_name{
+            font-size: 1.5em;
+        }
+
         &_title{
             padding-top: 0;
             padding-bottom: 3rem;
+            font-size: 3em;
         }
 
         &_info{
-            flex-direction: column;
+        flex-direction: column;
         align-items: start;
         }
 
         &_img{
-            width: 8rem;
-            height:8rem;
+            width: 6.5rem;
+            height:6.5rem;
             margin: 0; 
             margin-left: 1.8rem;   
             z-index: 1;   

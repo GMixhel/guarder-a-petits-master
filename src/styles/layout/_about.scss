@@ -66,6 +66,11 @@
         align-items: center;
       }
 
+             &_p {
+               margin-bottom: 2rem;
+               font-size: 1em;
+             }
+
       &_title-d{
         margin: 0;
         padding-top: 2rem;
@@ -77,10 +82,13 @@
       
             &_ilustrattion {
               margin: 6.5rem 0;
+              width: 15rem;
             }
 
             &_details{
-              margin-top: -2rem;
+              margin-top: -5rem;
             }
             }
+
+        
 }
