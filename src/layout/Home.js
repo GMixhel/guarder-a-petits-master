@@ -44,6 +44,7 @@ const Home = () => {
                 en <span className="hero_title-d">primera</span>
               </h2>
 
+
               <div className="hero_container-t">
                 <h2 className="hero_title">infancia!</h2>
                 <img

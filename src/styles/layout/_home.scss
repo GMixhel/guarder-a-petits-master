@@ -12,6 +12,7 @@
     display: none;
   }
 
+
     &_img-cont {
      display: none;
 
@@ -142,6 +143,22 @@
         display: none;
       }
 
+      &_title{
+        line-height: 1.3em;
+        font-family: 'Rubik',sans-serif;
+      
+      }
+
+      &_icon-caracol{
+        width: 3em;
+      }
+
+                &_title-d::before {
+                
+                  top: 3rem;
+                 
+                }
+
     &_value-proposal {
       display: flex;
       justify-content: center;
@@ -172,7 +189,8 @@
     &_description--movil {
       display: block;
       text-align: center;
-      font-size: 1.3em;
+      width: 85%;
+    
 
     }
 

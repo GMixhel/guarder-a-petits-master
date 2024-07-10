@@ -91,7 +91,7 @@ h5 {
 
 //Media Queries Desktop
 
- @include m.desktop{
+ @include m.movil{
 
         .container-movil{
             width: 85%;
@@ -99,12 +99,12 @@ h5 {
         }
 
          p {
-            font-size: 1.2em;
+            font-size: 1em;
          }
     
          h2 {
-        font-size: 3.3em;
-        line-height: 0.5em;
+        font-size: 2.5em;
+       line-height: 0.5em;
          }
     
          h3 {

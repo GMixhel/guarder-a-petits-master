@@ -133,7 +133,7 @@
         height: fit-content;
         width: 95%;
         margin-top: 0.5rem;
-        border-radius: 1.3rem;
+        border-radius: 1rem;
 
         &_nav-container{
             width: 100%;
@@ -143,7 +143,7 @@
 
         &__logo {
             width: 7rem;
-            padding: 1.5rem;
+            padding: 1rem 1.5rem;
         }
 
         &_menuIcon {
@@ -160,6 +160,8 @@
                 &_btn-contact {
                     display: none;
                 }
+
+              
             
                 &_up {
                     width: 3.5rem;
