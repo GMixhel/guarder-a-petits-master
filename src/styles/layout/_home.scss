@@ -136,97 +136,97 @@
 @include m.movil {
 
   .hero {
-    grid-template-columns: 1fr;
-    height: inherit;
-
-    &_btn-call {
+      grid-template-columns: 1fr;
+      height: inherit;
+  
+      &_btn-call {
         display: none;
       }
-
-      &_title{
+  
+      &_title {
         line-height: 1.3em;
-        font-family: 'Rubik',sans-serif;
-      
+        font-family: 'Rubik', sans-serif;
+  
       }
-
-      &_icon-caracol{
+  
+      &_icon-caracol {
         width: 3em;
       }
-
-                &_title-d::before {
-                
-                  top: 3rem;
-                 
-                }
-
-    &_value-proposal {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+  
+      &_title-d::before {
+  
+        top: 3rem;
+  
+      }
+  
+      &_value-proposal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+  
+      &_resources {
+        display: none;
+      }
+  
+      &_img-cont {
+        display: block;
+        border-radius: 2rem;
+        margin-top: 3rem;
+  
+      }
+  
+      &_title-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+  
+      }
+  
+      &_description--movil {
+        display: block;
+        text-align: center;
+        width: 85%;
+  
+  
+      }
+  
+      &_description {
+        display: none;
+      }
+  
+      &_cta {
+        margin-bottom: 5rem;
+      }
+  
+  
     }
-
-    &_resources {
-      display: none;
+  
+    .social {
+      &_link {
+        margin: 0;
+        padding: 1rem 0;
+      }
+  
+      &_container {
+        width: 100%;
+        justify-content: space-around;
+      }
+  
+      &_icon {
+        margin: 0;
+      }
+  
+      &_name {
+        display: none;
+      }
     }
-
-    &_img-cont {
-      display: block;
-      border-radius: 2rem;
-      margin-top: 3rem;
-
-    }
-
-    &_title-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 2rem;
-
-    }
-
-    &_description--movil {
-      display: block;
-      text-align: center;
-      width: 85%;
-    
-
-    }
-
-    &_description {
-      display: none;
-    }
-    &_cta{
-      margin-bottom: 5rem;
-    }
-
-
+  
+  
   }
-
-  .social{
-    &_link{
-      margin: 0;
-      padding: 1rem 0;
-    }
-
-    &_container{
-      width: 100%;
-      justify-content: space-around;
-    }
-
-    &_icon{
-     margin: 0;
-    }
-
-    &_name{
-      display: none;
-    }
-  }
-
-
-}
-
 
 
 
