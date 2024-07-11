@@ -50,7 +50,7 @@ const [show, setShow]= useState(false)
           <img src={logo} className="header__logo" alt='logo de la guardería'/>
 
           <div className="header__nav">
-            <ul className="nav">
+            <div className="nav">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav__item nav__active" : "nav__item "
@@ -72,7 +72,7 @@ const [show, setShow]= useState(false)
               <a className="nav__item" href="#">
                 Blog
               </a>
-            </ul>
+            </div>
           </div>
 
           <img
