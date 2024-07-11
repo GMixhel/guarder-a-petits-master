@@ -35,7 +35,17 @@ transform: translateY(-8rem);
     margin-left: 60%;
 }
 
-@include m.desktop {}
+@include m.desktop {
+    .slide_emoji--carita {
+            width: 7rem;
+        }
+    
+        .slide_emoji--bebe {
+            transform: translateY(-15rem);
+            width: 12rem;
+        }
+}
+
 
 @include m.tablet {}
 

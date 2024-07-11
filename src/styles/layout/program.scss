@@ -92,7 +92,37 @@
 
 //MEDIAS QUERIES EMAIL
 
-@include m.desktop {}
+@include m.desktop {
+    .program {
+
+        gap: 4rem;
+
+        &_title {
+            line-height: 4rem;
+            font-size: 3em;
+
+        }
+
+        &_name {
+            font-size: 1.5em;
+        }
+
+     
+
+        &_details {
+            line-height: 2.3rem;
+            font-size: 1.3em;
+        }
+
+        &_card {
+            padding: 7rem 5rem;
+
+            background-position: 380px 30px;
+
+        }
+    }
+
+}
 
 @include m.tablet {}
 

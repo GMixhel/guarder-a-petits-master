@@ -69,7 +69,45 @@
 }
 
 
-@include m.desktop {}
+@include m.desktop {
+    .waterBrand {
+            width: 15rem;
+            margin-top: -13rem;
+            opacity: 0.2;
+        }
+    .values{
+        &_child--4 {
+                width: 7rem;
+                height: 7rem;
+            }
+        
+            &_child--3 {
+                width: 5rem;
+                height: 5rem;
+            }
+        
+            &_child--1 {
+                width: 6rem;
+                height: 6rem;
+            }
+        
+            &_child--2 {
+                width: 10rem;
+                height: 10rem;
+                margin-top: 3rem;
+            }
+
+             &_resume {
+                width: 37%;
+          font-size: 1.25em;
+          margin-top: -0.45rem;
+        }
+
+                   &_boxes-2 {
+                       gap: 2.5rem;
+                   }
+    }
+}
 
 @include m.tablet {}
 

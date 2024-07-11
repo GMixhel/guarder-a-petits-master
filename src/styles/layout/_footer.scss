@@ -1,134 +1,186 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
+.footer {
+  //   width: 85%; 
+  //   height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
- .footer{
-//   width: 85%; 
-//   height: 100vh;
- clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
-   &_contact{
+  &_contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 5rem;
-   
-   }
 
-   &_title{
-     text-align: center;
-   }
+  }
 
-   &_img{
-     width: 8rem;
-     padding-bottom: 1rem;
-   }
+  &_title {
+    text-align: center;
+  }
 
-   &_cta{
-     @include m.buttom-green;
-     margin-top: 4rem;
-   }
-   
-            &_cta:hover {
-              filter: brightness(1.05);
-              transform: scale(1.03);
-            }
+  &_img {
+    width: 8rem;
+    padding-bottom: 1rem;
+  }
 
-            &_container-details{
-              display: flex;
-              justify-content: space-between;
+  &_cta {
+    @include m.buttom-green;
+    margin-top: 4rem;
+  }
 
-  
-            }
+  &_cta:hover {
+    filter: brightness(1.05);
+    transform: scale(1.03);
+  }
 
-            &_background{
-              background-color: v.$green;
-              padding: 2rem 0;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-            
-
-            &_subtitle{
-              font-size: 1.5em;
-              color: v.$secundary;
-              font-weight: 700;
-              font-family: v.$principal;
-              margin-bottom: 1.8rem;
-            }
-
-                        &_p-info {
-                          font-size: 1.3em;
-                          font-family: v.$principal;
-                          margin-bottom: 0.5rem;
-                        }
-                        &_link {
-                          font-size: 1.3em;
-                          font-family: v.$principal;
-                          margin-bottom: 1.2rem;
-                        }
-
-                        &_box{
-                          display: flex;
-                          flex-direction: column;
-                          justify-content: space-between;
-                        }
-                      
-
-                        &_privacy{
-                          background-color: #d9e2b0;
-                          padding: 1rem 0;
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                        }
-
-                        &_copyrite{
-                          font-size: 1.3em;
-                            font-family: v.$principal;
-                            color: v.$p;
-                          
-                        }
-                        &_link-privacy{
-                          font-size: 1.3em;
-                            font-family: v.$principal;
-                                color: v.$p;
-                          
-                        }
+  &_container-details {
+    display: flex;
+    justify-content: space-between;
 
 
-          
- }
+  }
 
- .flex{
-  display: flex;
-  display: flex;
+  &_background {
+    background-color: v.$green;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
- }
+  }
 
-.footer{ 
-    position: relative; 
-    height: 100vh;
-    bottom: 0;
 
-    &_a{
-        position: fixed;
-        height: 50rem;
-        width: 100%;
-        bottom: 0;
-    }
+  &_subtitle {
+    font-size: 1.5em;
+    color: v.$secundary;
+    font-weight: 700;
+    font-family: v.$principal;
+    margin-bottom: 1.8rem;
+  }
 
-       &_link{
-        color: v.$p;
-       }
+  &_p-info {
+    font-size: 1.3em;
+    font-family: v.$principal;
+    margin-bottom: 0.5rem;
+  }
 
-  
+  &_link {
+    font-size: 1.3em;
+    font-family: v.$principal;
+    margin-bottom: 1.2rem;
+  }
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  &_privacy {
+    background-color: #d9e2b0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_copyrite {
+    font-size: 1.3em;
+    font-family: v.$principal;
+    color: v.$p;
+
+  }
+
+  &_link-privacy {
+    font-size: 1.3em;
+    font-family: v.$principal;
+    color: v.$p;
+
+  }
+
+
+
 }
 
-@include m.desktop {}
+.flex {
+  display: flex;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  position: relative;
+  height: 100vh;
+  bottom: 0;
+
+  &_a {
+    position: fixed;
+    height: 50rem;
+    width: 100%;
+    bottom: 0;
+  }
+
+  &_link {
+    color: v.$p;
+  }
+
+
+}
+
+@include m.desktop {
+  .footer {
+    &_a {
+      position: fixed;
+      height: 42rem;
+      width: 100%;
+      bottom: 0;
+    }
+
+    &_background{
+      padding: 1.5rem 0;
+    }
+
+    &_title {
+      font-size: 1.5em;
+      width: 95%;
+
+    }
+
+    &_cta{
+      font-size: 1.1em;
+    }
+
+    &_p-info {
+      font-size: 1.05em;
+    }
+
+    &_link {
+      font-size: 1.05em;
+      margin-bottom: 0.8rem;
+    }
+
+    &_subtitle {
+      font-size: 1.2em;
+      margin-bottom: 1.3rem;
+    }
+
+    &_copyrite {
+      font-size: 1.2em;
+
+    }
+
+    &_link-privacy {
+      font-size: 1.2em;
+    }
+
+    &_img{
+      width: 7rem;
+    }
+  }
+
+}
 
 @include m.tablet {}
 

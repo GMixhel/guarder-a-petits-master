@@ -91,6 +91,27 @@ h5 {
 
 //Media Queries Desktop
 
+@include m.desktop {
+        
+            p {
+                font-size: 1.2em;
+            }
+        
+            h2 {
+                font-size: 4.05em;
+                line-height: 0.3em;
+            }
+        
+            h3 {}
+        
+            h4 {
+                font-size: 2.05em;
+                    line-height: 1.4em;
+            }
+        
+            span {}
+}
+
  @include m.movil{
 
         .container-movil{
@@ -99,12 +120,11 @@ h5 {
         }
 
          p {
-            font-size: 1em;
+            font-size: 1.05em;
          }
     
          h2 {
         font-size: 2.5em;
-       line-height: 0.5em;
          }
     
          h3 {

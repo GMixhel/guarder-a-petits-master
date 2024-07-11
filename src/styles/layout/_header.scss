@@ -112,7 +112,20 @@
 
 //MEDIAS QUERIES 
 
-@include m.desktop {}
+@include m.desktop {
+
+    .header{
+        &__logo {
+                width: 5rem;
+            }
+    }
+
+    .nav{
+        &__item {
+                font-size: 1.3em;
+    }}
+   
+}
 
 @include m.tablet {}
 

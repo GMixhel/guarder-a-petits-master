@@ -117,7 +117,42 @@
     overflow: hidden;
 }
 
-@include m.desktop {}
+@include m.desktop {
+    .testimonials{
+        &_title{
+            font-size: 3em;
+        }
+
+        &_testimonials{
+            font-size: 1.1em;
+        }
+
+         &_box-grid6{
+        margin-top: 18rem;
+    }
+    &_box-grid5{
+        margin-top: 5rem;
+    }
+    &_box-grid4{
+        margin-top: -12.5rem;
+    }
+    &_box-grid1{
+        margin-top: -36rem;
+    }
+    &_box-grid2{
+        margin-top: -25.5rem;
+    }
+
+    &_comas{
+        margin-bottom: 1rem;
+    }
+
+         &_avatar {
+             width: 2.5rem;
+             height: 2.5rem;
+            }
+    }
+}
 
 @include m.tablet {}
 
