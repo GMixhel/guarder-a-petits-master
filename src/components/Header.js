@@ -47,7 +47,7 @@ const [show, setShow]= useState(false)
         }
       >
         <div className="header_nav-container">
-          <img src={logo} className="header__logo" />
+          <img src={logo} className="header__logo" alt='logo de la guardería'/>
 
           <div className="header__nav">
             <ul className="nav">

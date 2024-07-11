@@ -141,11 +141,6 @@ const Gallery = () => {
         </picture>
 
 
-
-
-
-        
-
         <div
           onClick={closeShow}
           className={
