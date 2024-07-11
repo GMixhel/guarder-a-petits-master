@@ -7,7 +7,7 @@ const Program = () => {
         <div className="program_description">
           <div className="program_description--container">
             <h2 className="program_title">
-              Nuestro <br /> día a día
+              Nuestro día a día
             </h2>
             <p className="program_resume">
               Trabajamos con una programación diaria donde vamos poniendo

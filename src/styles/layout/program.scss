@@ -14,12 +14,14 @@
     &_description--container   {
             padding-bottom: 8rem;
             position: sticky;
-            top: 13rem;
+            top: 18rem;
     }
 
-    &_title{
-        margin-top: 10rem; 
-    }
+        &_title {
+            margin-top: 15rem;
+            font-size: 4rem;
+            padding-bottom: 2rem;
+        }
 
     &_areas{
         display: grid;
@@ -116,13 +118,13 @@
         
 
         &_title{
-            line-height: 3.5rem;
+            line-height: 3rem;
             margin-top: 5rem;
-            margin-bottom: 2rem;
+            font-size: 1.8em;
         }
 
         &_name{
-            font-size: 1.3em;
+            font-size: 1.05em;
             margin-bottom: 1.5rem;
         }
 

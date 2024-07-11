@@ -64,7 +64,7 @@ const Slide = () => {
         <Swiper
           grabCursor={true}
           centeredSlides={true}
-          loop={true}
+        loop={true}
           slidesPerView={isSmallScreen ? "1.2" : "3"}
           coverflowEffect={{
             rotate: 0,
