@@ -14,8 +14,9 @@ const Diference = () => {
       </h3>
       <div className="diference container">
         <div className="diference_box">
-          <h5 className="diference_title">Flexibilitat Horària</h5>
           <div className="diference_details">
+            <h5 className="diference_title">Flexibilitat Horària</h5>
+
             <p className="diference_p">
               Volem que et sentis còmode i segur en tot moment! Oferim
               flexibilitat total en els horaris. El nostre servei de bons per
@@ -33,8 +34,9 @@ const Diference = () => {
           </div>
         </div>
         <div className="diference_box diference_box--green">
-          <h5 className="diference_title">Sesions de Música</h5>
           <div className="diference_details">
+            <h5 className="diference_title">Sesions de Música</h5>
+
             <p className="diference_p">
               La música és un recurs educatiu poderós que facilita el
               desenvolupament del llenguatge i habilitats motores. A través de
@@ -53,8 +55,9 @@ const Diference = () => {
           </div>
         </div>
         <div className="diference_box">
-          <h5 className="diference_title">Comunicació</h5>
           <div className="diference_details">
+            <h5 className="diference_title">Comunicació</h5>
+
             <p className="diference_p">
               A Petits, mantenim una comunicació constant amb les famílies i les
               nostres educadores estan sempre disponibles per a informar sobre
