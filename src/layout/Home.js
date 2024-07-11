@@ -44,7 +44,6 @@ const Home = () => {
                 en <span className="hero_title-d">primera</span>
               </h2>
 
-
               <div className="hero_container-t">
                 <h2 className="hero_title">infancia!</h2>
                 <img
@@ -56,20 +55,20 @@ const Home = () => {
             </div>
 
             <p className="hero_description">
-              Ven y descubre Petits, donde cada niño es especial <br /> y cada
-              momento cuenta. ¡Te esperamos con los <br />
-              brazos abiertos!
+              Vine i descobreix Petits, on cada nen és especial <br />i cada
+              moment compta. T'esperem amb els <br />
+              braços oberts!
             </p>
 
             <p className="hero_description--movil">
-              Ven y descubre Petits, donde cada niño es especial y cada momento
-              cuenta. ¡Te esperamos con los brazos abiertos!
+              Vine i descobreix Petits, on cada nen és especial i cada moment
+              compta. T'esperem amb els braços oberts!
             </p>
 
             <img src={heroImg} className="hero_img-cont" />
 
             <a href="#heroKnow" className="hero_cta">
-              ¡Conócenos!
+              coneix-nos!
             </a>
           </div>
         </div>
@@ -81,7 +80,7 @@ const Home = () => {
             target="_blank"
             className="hero_btn-call"
           >
-            Contáctanos
+            Contacta'ns!
           </a>
         </div>
       </div>
@@ -148,18 +147,21 @@ const Home = () => {
 
         <div className="values_boxes values_boxes-2">
           <h4 className="values_details">
-            Cubrimos todas las áreas <br /> claves de aprendizaje y <br />
-            desarrollo para los bebés
+            Cobrim totes les àrees clau <br />
+            d'aprenentatge i desenvolupament
+            <br />
+            dels nostres alumnes.
           </h4>
 
           <p className="values_resume">
-            En Petits, entendemos que cada niño tiene su propio ritmo y estilo
-            de aprendizaje. Respetamos estas diferencias y les enseñamos a
-            descubrir sus propias herramientas para superar cada desafíos.
-            Creemos que, como el caracol, cada niño llegará a su meta con
-            confianza y perseverancia, utilizando sus propios recursos para
-            avanzar, paso a paso. ¡Aquí en Petits, cada pequeño triunfa a su
-            manera!
+            A Petits, entenem que cada nen té el seu propi ritme i estil
+            d'aprenentatge. Respectem aquestes diferències i els ensenyem a
+            descobrir les seves pròpies eines per a superar cada desafiament.
+            Creiem que, Al igual que un cargolet, el logo que ens representa,
+            cada nen arribarà a la seva meta amb confiança i perseverança,
+            utilitzant els seus propis recursos per a avançar, pas a pas. Aquí
+            an Petits, cada alumno triomfa a la seva manera!No és millor el que
+            arriba abans, sino el que arriba quan está preparat.
           </p>
         </div>
 

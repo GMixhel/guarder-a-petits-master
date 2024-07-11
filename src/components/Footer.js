@@ -13,23 +13,25 @@ const Footer = () => {
               className="footer_img"
             />
             <h4 className="footer_title">
-              ¿Tienes alguna consulta o <br /> necesitas más detalles?
+              Tens alguna consulta o <br /> necessites més detalls?
             </h4>
             <a href="mailto: info@petitscerdanyola.com" className="footer_cta">
-              !Contáctanos¡
+              Contacta'ns!
             </a>
           </div>
 
           <div className="footer_background">
             <div className="footer_container-details container">
               <div className="footer_box">
-                <h5 className="footer_subtitle">Detalles de Contacto</h5>
+                <h5 className="footer_subtitle">Detalls de contacte</h5>
                 <div className="footer_items">
                   <a
                     className="footer_link"
                     href={`mailto:info@petitscerdanyola.com?subject=${encodeURIComponent(
                       "Mas información"
-                    )}&body=${encodeURIComponent("Hola, queria saber más sobre:")}`}
+                    )}&body=${encodeURIComponent(
+                      "Hola, queria saber más sobre:"
+                    )}`}
                   >
                     info@petitscerdanyola.com
                   </a>
@@ -40,7 +42,7 @@ const Footer = () => {
               </div>
 
               <div className="footer_box footer_redes">
-                <h5 className="footer_subtitle">Redes Sociales</h5>
+                <h5 className="footer_subtitle">Xarxes Socials</h5>
 
                 <div className="footer_items ">
                   <a
@@ -71,7 +73,7 @@ const Footer = () => {
               </div>
 
               <div className="footer_box">
-                <h5 className="footer_subtitle">Donde estamos Guardería</h5>
+                <h5 className="footer_subtitle">On som</h5>
                 <div className="footer_items">
                   <p className="footer_p-info">
                     L´horari d´atenció 8.00 a 9.00 h - 17.00 a 18.00 h
@@ -89,7 +91,7 @@ const Footer = () => {
             <div className=" flex container">
               <p className="footer_copyrite">PETITS © Copyright 2024 </p>
               <a href="#" className="footer_link-privacy">
-                / Política de privacidad
+                / Política de privadesa
               </a>
             </div>
           </div>

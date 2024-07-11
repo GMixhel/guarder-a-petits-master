@@ -6,14 +6,11 @@ const Program = () => {
       <div className="program container-hero container-movil">
         <div className="program_description">
           <div className="program_description--container">
-            <h2 className="program_title">
-              Nuestro día a día
-            </h2>
+            <h2 className="program_title">El nostre dia a dia</h2>
             <p className="program_resume">
-              Trabajamos con una programación diaria donde vamos poniendo
-              puntos de interés ya sea a través del juego, la música, la
-              pintura y la
-              psicomotricidad.
+              Treballem amb una programació diària on ens Guiem a traves de
+              punts d'interès ja sigui a través del joc, la música, la pintura i
+              la psicomotricitat.
             </p>
           </div>
         </div>
@@ -21,14 +18,12 @@ const Program = () => {
         <div className="program_areas">
           <div className="program_card-container">
             <div className="program_card program_card--1">
-              <h5 className="program_name">Conocimiento de Sí Mismo</h5>
+              <h5 className="program_name">Coneixement de Si Mateix</h5>
               <p className="program_details">
-                En esta área, los niños empiezan a explorar su identidad,
-                descubriendo quiénes son y desarrollando una autoestima
-                saludable.
-                Fomentamos la autoconfianza y la independencia,
-                ayudándolos a reconocer sus propias habilidades y
-                fortalezas.
+                En aquesta àrea, els nens comencen a explorar la seva identitat,
+                descobrint qui són desenvolupant una autoestima saludable.
+                Fomentem l'autoconfiança i la independència, ajudant-los a
+                reconèixer les seves pròpies habilitats i fortaleses.
               </p>
             </div>
           </div>
@@ -36,14 +31,13 @@ const Program = () => {
           <div className="program_card-container">
             <div className="program_card program_card--2">
               <h5 className="program_name program_name--2">
-                Conocimiento del Entorno
+                Coneixement de L'entorn
               </h5>
               <p className="program_details">
-                Fomentamos la curiosidad innata de los niños, animándolos a
-                explorar y descubrir todo lo que  los rodea, desde su entorno
-                inmediato hasta el  mundo más amplio desarrollando un amor por  el
-                aprendizaje y una comprensión más profunda  del mundo en el que
-                viven.
+                Fomentem la curiositat innata dels nens,animant-los a explorar i
+                descobrir tot el que els envolta, des del seu entorn immediat
+                fins al mónmés ampli desenvolupant un amor per l'aprenentatge i
+                una comprensió més profunda del món en el qual viuen.
               </p>
             </div>
           </div>
@@ -51,14 +45,13 @@ const Program = () => {
           <div className="program_card-container">
             <div className="program_card program_card--3">
               <h5 className="program_name program_name--3">
-                Intercomunicación y Lenguaje
+               intercomunicacio i Llenguatge
               </h5>
               <p className="program_details">
-                A medida que crecen, los niños mejoran sus habilidades de
-                comunicación. Aquí, fomentamos un ambiente donde cada día
-                se
-                expresan de manera más clara y efectiva, aprendiendo a
-                comunicarse con sus amigos y profesores.
+                A mesura que creixen, els nens milloren les seves habilitats de
+                comunicació. Aquí,fomentem un ambient on cada dia s’expressen de
+                manera més clara i efectiva aprenent a comunicarse amb els seus
+                amics i educadores
               </p>
             </div>
           </div>

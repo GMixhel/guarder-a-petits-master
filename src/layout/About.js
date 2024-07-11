@@ -13,48 +13,52 @@ const About = () => {
       <div className="about container">
         <div className="about_data">
           <h2 className="about_title">
-            La Nostra <br />
+            La Nostre <br />
             <span className="hero_title-d about_title-d">Filosofia</span>
           </h2>
 
           <div className="about_ilustrattion">
-            <img src={imgAbout} alt="" className="about_img" />
+            <img
+              src={imgAbout}
+              alt="Imagen de niños divirtiendose"
+              className="about_img"
+            />
           </div>
         </div>
         <div className="about_details">
           <p className="about_p">
-            Creemos en una educación auténtica y cercana, donde los niños no
-            solo comparten un espacio, sino que también crecen y aprenden
-            juntos. Nuestra filosofía se aleja de las tradicionales aulas
-            estáticas y aburridas, donde los niños pasan largas horas sentados
-            con poca movilidad. En lugar de eso, ofrecemos un ambiente dinámico
-            y estimulante.
+            Creiem en una educació autèntica i pròxima, on els nens no sols
+            comparteixen un espai, sinó que també creixen i aprenen junts. La
+            nostra filosofia s'allunya de les tradicionals aules estàtiques i
+            avorrides, on els nens passen llargues hores asseguts amb poca
+            mobilitat. En lloc d'això, oferim un ambient dinàmic i estimulant,
+            si més no el que toca en aquest etapa del creixement.
           </p>
           <p className="about_p">
-            A diferencia de otras guarderías con habitaciones pequeñas y
-            separadas, en Petits todos los niños, sin importar su edad,
-            comparten el mismo espacio amplio y acogedor, promoviendo así una
-            convivencia natural y enriquecedora.
+            A diferència d'altres centres amb aules petites i separades per
+            edats, a Petits tots els nens, sense importar la seva edat,
+            comparteixen el mateix espai ampli i acollidor, promovent així una
+            convivència natural i enriquidora.
           </p>
           <p className="about_p">
-            Aprender a relacionarse con personas de distintas edades es
-            fundamental para la vida. Este intercambio crea un ambiente de
-            respeto y cariño mutuo. Nuestro equipo de profesoras está siempre
-            cerca, guiando y acompañando a los niños para asegurar un entorno
-            armonioso y seguro.
+            Aprendre a relacionar-se amb persones de diferents edats és
+            fonamental per a la vida. Aquest intercanvi crea un ambient de
+            respecte i afecte mutu. El nostre equip d´educadores està sempre a
+            prop, guiant i acompanyant als nens per a assegurar un entorn
+            harmoniós i segur.
           </p>
         </div>
       </div>
 
       <section className="local container ">
         <h4 className="local_title ">
-          Explora nuestras amplias y coloridas instalaciones diseñadas para
-          grantizar el aprendizaje y la diversión en un entorno seguro
+          Explora les nostres àmplies i acolorides instal·lacions dissenyades
+          per a garantir l'aprenentatge i la diversió en un entorn segur
         </h4>
       </section>
 
       <Gallery />
-      
+
       <Team />
 
       <Footer />

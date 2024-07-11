@@ -47,7 +47,7 @@ const [show, setShow]= useState(false)
         }
       >
         <div className="header_nav-container">
-          <img src={logo} className="header__logo" alt='logo de la guardería'/>
+          <img src={logo} className="header__logo" alt="logo de la guardería" />
 
           <div className="header__nav">
             <div className="nav">
@@ -57,7 +57,7 @@ const [show, setShow]= useState(false)
                 }
                 to="/inicio"
               >
-                Inicio
+                Inici
               </NavLink>
 
               <NavLink
@@ -66,7 +66,7 @@ const [show, setShow]= useState(false)
                 }
                 to="/about"
               >
-                Nosotros
+                Nosaltres
               </NavLink>
 
               <a className="nav__item" href="#">
@@ -96,7 +96,7 @@ const [show, setShow]= useState(false)
             target="_blank"
             className="hero_btn-call "
           >
-            Contáctanos
+            Contacta'ns!
           </a>
         </div>
 

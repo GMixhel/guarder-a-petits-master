@@ -10,17 +10,17 @@ const Diference = () => {
   return (
     <>
       <h3 className="diference_section">
-        Descubre que nos <br /> hace únicos
+        Descobreix que <br /> ens fa unics
       </h3>
       <div className="diference container">
         <div className="diference_box">
-          <h5 className="diference_title">Flexibilidad Horaria </h5>
+          <h5 className="diference_title">Flexibilitat Horària</h5>
           <div className="diference_details">
             <p className="diference_p">
-              ¡Queremos que te sientas cómodo y seguro en todo momento!
-              Ofrecemos flexibilidad total en los horarios. Nuestro servicio de
-              bonos por horas permite a las familias adaptarse fácilmente al
-              centro mientras construyen una relación de confianza con nosotros.
+              Volem que et sentis còmode i segur en tot moment! Oferim
+              flexibilitat total en els horaris. El nostre servei de bons per
+              hores permet a les famílies adaptar-se fàcilment al centre mentre
+              construeixen una relació de confiança amb nosaltres.
             </p>
           </div>
 
@@ -33,14 +33,14 @@ const Diference = () => {
           </div>
         </div>
         <div className="diference_box diference_box--green">
-          <h5 className="diference_title">Sesiones de Música</h5>
+          <h5 className="diference_title">Sesions de Música</h5>
           <div className="diference_details">
             <p className="diference_p">
-              La música es un recurso educativo poderoso que facilita el
-              desarrollo del lenguaje y habilidades motoras. A través de
-              canciones, ritmos y melodías, potenciamos las habilidades
-              cognitivas, emocionales y sociales de los niños, promoviendo su
-              creatividad y amor por el aprendizaje.
+              La música és un recurs educatiu poderós que facilita el
+              desenvolupament del llenguatge i habilitats motores. A través de
+              cançons, ritmes i melodies, potenciem la comunicació gràcies a les
+              habilitats cognitives, emocionals I socials dels nens, promovent
+              la seva creativitat i amor per l’aprenentatge.
             </p>
           </div>
 
@@ -53,14 +53,14 @@ const Diference = () => {
           </div>
         </div>
         <div className="diference_box">
-          <h5 className="diference_title">Comunicación</h5>
+          <h5 className="diference_title">Comunicació</h5>
           <div className="diference_details">
             <p className="diference_p">
-              En Petits, mantenemos una comunicación constante con las familias
-              y nuestras maestras están siempre disponibles para informar sobre
-              la evolución de los pequeños. Además, las visitas están siempre
-              disponibles para que puedan ver cómo crecen sus hijos en nuestro
-              cuidado.
+              A Petits, mantenim una comunicació constant amb les famílies i les
+              nostres educadores estan sempre disponibles per a informar sobre
+              l'evolució dels petits. A més, les visites estan sempre
+              disponibles perquè puguin veure com creixen els seus fills mentre
+              tenim cura dells.
             </p>
           </div>
 
@@ -76,9 +76,12 @@ const Diference = () => {
 
       <div className="moments">
         <div className="moments_container container">
-
           <div className="moments_video">
-            <img className='video_icon video_icon-a' src={videoIcon1} alt="carita cariñosa" />
+            <img
+              className="video_icon video_icon-a"
+              src={videoIcon1}
+              alt="carita cariñosa"
+            />
             <div className="video__container">
               <div className="video_decoration">hola</div>
               <video
@@ -90,20 +93,24 @@ const Diference = () => {
                 className="video"
               ></video>
             </div>
-            <img className='video_icon video_icon-b'  src={videoIcon2} alt="corazon con mensaje" />
+            <img
+              className="video_icon video_icon-b"
+              src={videoIcon2}
+              alt="corazon con mensaje"
+            />
           </div>
 
           <div className="moments_details">
             <h3 className="moments_title">
-              ¡Momentos de <span className="moments_span">Ternura</span>!
+              Moments de <span className="moments_span">Tendresa</span>!
             </h3>
             <p className="moments_p">
-              En Petits, nos encanta mantener a las familias conectadas con el
-              día a día de sus pequeños. Gracias a nuestra moderna aplicación
-              Tyra, podemos compartir fotos y videos de las actividades diarias,
-              para que los padres puedan ver lo divertido y educativo que es
-              cada momento en Petits. ¡Así, siempre estarás al tanto de las
-              aventuras y aprendizajes de tus hijos!
+              A Petits, ens encanta mantenir a les famílies conectades amb el
+              dia a dia dels seus petits.Gràcies a la nostra moderna aplicació
+              Tyra podem compartir fotos i vídeos de les activitats diàries,
+              perquè els pares puguin veure com de divertit i educatiu és cada
+              moment a Petits. Així, sempre estaràs al corrent de les aventures
+              i aprenentatges dels teus fills!Np et perdis res mentre treballes¡
             </p>
           </div>
         </div>
