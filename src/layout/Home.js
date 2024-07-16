@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import Header from '../components/Header';
 import caracol from "../images/caracol-petits.svg"
-import youtubeIco from "../images/petits-youtube.svg"
-import instagramIco from "../images/petis-instagram.svg"
-import facebookIco from "../images/petit-facebook.svg"
+import frutaIcon from "../images/fruta.svg"
+import ubicacion from "../images/ubic.svg"
+import festivos from "../images/festivo.svg"
+import cediap from "../images/cediap.svg"
 import child1 from "../images/petits-1.svg"
 import child2 from "../images/petits-2.svg"
 import child3 from "../images/petits-3.svg"
@@ -86,48 +87,56 @@ const Home = () => {
       </div>
 
       <div className="social">
-        <div className="social_container">
-          <a
-            href="https://www.facebook.com/people/Petit-Nins/100050922142626/"
-            className="social_link"
-            rel="noreferrer"
-            target="_blank"
-          >
+        <div className="social_container container  ">
+          <div className="social_box">
             <img
               className="social_icon"
-              src={facebookIco}
-              alt="red social facebook"
+              src={frutaIcon}
+              alt="frutas en un bol"
             />
-            <p className="social_name">facebook</p>
-          </a>
+            <p className="social_description">
+              brindem <span className="bold">una dieta balancejada</span> per
+              als nadons, garantint que cada mos contribueixi al seu creixement
+              saludable
+            </p>
+          </div>
 
-          <a
-            href="https://www.youtube.com/channel/UCxUhX95S75dnwxva6muZ0JQ"
-            className="social_link"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <div className="social_box">
             <img
               className="social_icon"
-              src={youtubeIco}
-              alt="red social youtube"
+              src={festivos}
+              alt="frutas en un bol"
             />
-            <p className="social_name">youtube</p>
-          </a>
+            <p className="social_description">
+              <span className="bold">
+                Treballem durant Nadal, juliol i Setmana Santa
+              </span>
+              . Mentre altres descansen, nosaltres som aquí per cuidar i
+              entretenir els teus fills..
+            </p>
+          </div>
 
-          <a
-            href="https://www.instagram.com/petitnins/"
-            className="social_link"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <div className="social_box">
+            <img className="social_icon" src={cediap} alt="frutas en un bol" />
+            <p className="social_description">
+              <span className="bold">Colaboramos con CDIAP DAPSI</span> para
+              ofrecer atención temprana a niños con trastornos del desarrollo o
+              en riesgo de padecerlos.
+            </p>
+          </div>
+
+          <div className="social_box">
             <img
-              className="social_icon"
-              src={instagramIco}
-              alt="red social instagram"
+              className="social_icon social_icon-grey"
+              src={ubicacion}
+              alt="frutas en un bol"
             />
-            <p className="social_name">instagram</p>
-          </a>
+            <p className="social_description">
+              Arribar a la nostra guarderia és senzill i ràpid, estem ubicats en
+              una de les
+              <span className="bold">zones més accessibles de Cerdanyola</span>
+            </p>
+          </div>
         </div>
       </div>
 
