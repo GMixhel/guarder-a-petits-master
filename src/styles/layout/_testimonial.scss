@@ -117,6 +117,10 @@
 
 @include m.desktop {
     .testimonials{
+
+        &_boxes-container{
+            gap: 0.7rem ;
+        }
         &_title{
             font-size: 2.8em;
         }
@@ -133,9 +137,11 @@
     }
     &_box-grid4{
         margin-top: -12.5rem;
+        margin-bottom: 0.7rem;
     }
     &_box-grid1{
         margin-top: -8rem;
+        margin-bottom: 0.7rem;
     }
   
 
