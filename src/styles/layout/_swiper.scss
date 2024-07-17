@@ -11,6 +11,11 @@
 }
 .slide {
 z-index: -1;
+
+
+&_title{
+    text-align: right;   
+}
 }
 
 .swiper_container-petits{
@@ -23,10 +28,10 @@ z-index: -1;
 }
 
  .slide_emoji--carita{
-    width: 12rem;
+    width: 10rem;
     position: sticky;
     margin-left: 30%;
-    transform: translateY(8rem);
+    transform: translateY(12rem);
 }
  .slide_emoji--bebe{
 transform: translateY(-8rem);
@@ -37,13 +42,19 @@ transform: translateY(-8rem);
 
 @include m.desktop {
     .slide_emoji--carita {
-            width: 7rem;
-        }
-    
-        .slide_emoji--bebe {
-            transform: translateY(-15rem);
-            width: 12rem;
-        }
+        width: 7rem;
+    }
+
+    .slide_emoji--bebe {
+        transform: translateY(-15rem);
+        width: 12rem;
+    }
+
+    .swiper_container-petits img {
+        height: 30rem;
+        width: 30rem;
+
+    }
 }
 
 

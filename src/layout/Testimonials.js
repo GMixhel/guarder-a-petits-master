@@ -62,68 +62,72 @@ const Testimonials = () => {
             </div>
           </div>
 
-          <div className="testimonials_box testimonials_box-grid4">
-            <div className="testimonials_comas">"</div>
-            <p className="testimonials_testimonials">
-              Ambiente súper familiar, y las educadoras son un encanto, se nota
-              el amor que tienen por nuestros niños,no podemos estar más
-              contentos con nuestra experiencia. Nuestra pequeña se queda súper
-              feliz cada día y sobre todo aprendido muchísimo.
-            </p>
+          <div className="testimonials_colum3">
+            <div className="testimonials_box testimonials_box-grid4">
+              <div className="testimonials_comas">"</div>
+              <p className="testimonials_testimonials">
+                Ambiente súper familiar, y las educadoras son un encanto, se
+                nota el amor que tienen por nuestros niños,no podemos estar más
+                contentos con nuestra experiencia. Nuestra pequeña se queda
+                súper feliz cada día y sobre todo aprendido muchísimo.
+              </p>
 
-            <div className="testimonials_person">
-              <div className="testimonials_avatar">P</div>
-              <p className="testimonials_user">Pilar Campos</p>
+              <div className="testimonials_person">
+                <div className="testimonials_avatar">P</div>
+                <p className="testimonials_user">Pilar Campos</p>
+              </div>
+            </div>
+
+            <div className="testimonials_box testimonials_box-grid3">
+              <div className="testimonials_comas">"</div>
+              <p className="testimonials_testimonials">
+                Para mí y mi Pequeño Ha Sido Una Etapa Maravillosa! Gracias por
+                todo Gran Proyecto Gran Espacio Mucha Ilusión Súper
+                Profesionales y los más importante ....los peques felices muy
+                felices! Nos quedaríamos en Petit Nins SIEMPRE ❣️
+              </p>
+
+              <div className="testimonials_person">
+                <div className="testimonials_avatar">K</div>
+                <p className="testimonials_user">Kristina Torres</p>
+              </div>
             </div>
           </div>
 
-          <div className="testimonials_box testimonials_box-grid3">
-            <div className="testimonials_comas">"</div>
-            <p className="testimonials_testimonials">
-              Para mí y mi Pequeño Ha Sido Una Etapa Maravillosa! Gracias por
-              todo Gran Proyecto Gran Espacio Mucha Ilusión Súper Profesionales
-              y los más importante ....los peques felices muy felices! Nos
-              quedaríamos en Petit Nins SIEMPRE ❣️
-            </p>
+          <div className="testimonials_colum4">
+            <div className="testimonials_box testimonials_box-grid1">
+              <div className="testimonials_comas">"</div>
+              <p className="testimonials_testimonials">
+                Contento con el trato, la atención, la dedicación y la
+                profesionalidad recibida de todo el equipo de petits nins. La
+                aplicación que tienen hace que te sientas más cerca de la
+                educación que ofrecen a diario, ahí te comunican todo el
+                seguimiento, avances y las actividades que hacen. Las educadoras
+                son adorables con los peques y el equipo directivo muy cercano.
+                Los peques se quedan contentos y salen felices y yo como padre
+                más. Muy recomendado!!!.
+              </p>
 
-            <div className="testimonials_person">
-              <div className="testimonials_avatar">K</div>
-              <p className="testimonials_user">Kristina Torres</p>
+              <div className="testimonials_person">
+                <div className="testimonials_avatar">J</div>
+                <p className="testimonials_user">JAY Mendez</p>
+              </div>
             </div>
-          </div>
 
-          <div className="testimonials_box testimonials_box-grid1">
-            <div className="testimonials_comas">"</div>
-            <p className="testimonials_testimonials">
-              Contento con el trato, la atención, la dedicación y la
-              profesionalidad recibida de todo el equipo de petits nins. La
-              aplicación que tienen hace que te sientas más cerca de la
-              educación que ofrecen a diario, ahí te comunican todo el
-              seguimiento, avances y las actividades que hacen. Las educadoras
-              son adorables con los peques y el equipo directivo muy cercano.
-              Los peques se quedan contentos y salen felices y yo como padre
-              más. Muy recomendado!!!.
-            </p>
+            <div className="testimonials_box testimonials_box-grid2">
+              <h5 className="testimonials_comas">"</h5>
+              <p className="testimonials_testimonials">
+                La meva filla no podría haver estat en un lloc millor. S'adapten
+                al nadó i les necessitats de les families. Tracte molt familiar,
+                joc lliure amb molts espais i llibertat de moviment. Atenció de
+                10 per part de la directora i les mestres. Tenen opción de
+                casalets i de bonus per hores. Repetiriem sense dubtar-ho
+              </p>
 
-            <div className="testimonials_person">
-              <div className="testimonials_avatar">J</div>
-              <p className="testimonials_user">JAY Mendez</p>
-            </div>
-          </div>
-
-          <div className="testimonials_box testimonials_box-grid2">
-            <h5 className="testimonials_comas">"</h5>
-            <p className="testimonials_testimonials">
-              La meva filla no podría haver estat en un lloc millor. S'adapten
-              al nadó i les necessitats de les families. Tracte molt familiar,
-              joc lliure amb molts espais i llibertat de moviment. Atenció de 10
-              per part de la directora i les mestres. Tenen opción de casalets i
-              de bonus per hores. Repetiriem sense dubtar-ho
-            </p>
-
-            <div className="testimonials_person">
-              <div className="testimonials_avatar">M</div>
-              <p className="testimonials_user">mireia font chicon</p>
+              <div className="testimonials_person">
+                <div className="testimonials_avatar">M</div>
+                <p className="testimonials_user">mireia font chicon</p>
+              </div>
             </div>
           </div>
         </div>

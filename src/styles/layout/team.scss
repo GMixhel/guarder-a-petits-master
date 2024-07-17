@@ -64,7 +64,33 @@
     } 
 } 
 
-@include m.desktop {}
+@include m.desktop {
+
+    .team{
+        margin: 2rem 0;
+
+            &_img {
+                    width: 15rem;
+                    height: 18rem;
+            
+                }
+
+                &_member-data{
+                    height: 18rem;
+                }
+
+                                        &_name {
+                                            font-size: 1.5em;
+                                           
+                                        }
+                    
+                                        &_position {
+                                            font-size: 1.1em;
+                                          
+                                        }
+
+    }
+}
 
 @include m.tablet {}
 
