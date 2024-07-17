@@ -117,11 +117,6 @@
     
     
   }
-  &_icon-grey{
-   
-    
-    
-  }
 
   &_description{
     font-weight: 400;
@@ -249,12 +244,16 @@
   
       &_container {
         width: 100%;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 5rem 0;
+      }
+
+      &_box{
+        padding: 1rem 1.3rem;
       }
   
-      &_icon {
-        margin: 0;
-      }
+      
   
       &_name {
         display: none;
