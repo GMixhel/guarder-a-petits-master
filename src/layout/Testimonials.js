@@ -8,11 +8,10 @@ const Testimonials = () => {
       <div className="testimonials_container ">
         <div className="testimonials_heading">
           <h3 className="testimonials_title">
-            ¿Que dicen las familias <br /> sobre nosotros?
+            Què diuen les famílies <br /> sobre nosaltres?
           </h3>
           <p className="testimonials_description">
-            Breve recopilación de algunos de los testimonios de nuestros
-            clientes
+            Breu recopilació d'alguns dels testimonis dels nostres clients
           </p>
           <img
             src={fiveStart}
@@ -141,7 +140,7 @@ const Testimonials = () => {
             target="_blank"
             className="testimonials_cta"
           >
-            ¡Ver más!
+            Veure més!
           </a>
         </div>
       </div>

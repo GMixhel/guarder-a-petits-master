@@ -69,8 +69,13 @@ const [show, setShow]= useState(false)
                 Nosaltres
               </NavLink>
 
-              <a className="nav__item" href="#">
-                Blog
+              <a
+                className="nav__item"
+                href="https://forms.gle/RQmPEszVTEjNSk2B6"
+                rel="noreferrer"
+                target="_blank"
+              >
+                cita prèvia
               </a>
             </div>
           </div>

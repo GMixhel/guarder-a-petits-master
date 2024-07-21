@@ -50,7 +50,7 @@ const Nav = ({ show, setShow }) => {
                     isActive ? "nav-movil__active" : " "
                   }
                 >
-                  Inicio
+                  Inici
                 </NavLink>
               </li>
               <li className="nav-movil__item">
@@ -60,18 +60,20 @@ const Nav = ({ show, setShow }) => {
                     isActive ? "nav-movil__active" : " "
                   }
                 >
-                  Nosotros
+                  Nosaltres
                 </NavLink>
               </li>
               <li className="nav-movil__item">
-                <NavLink
-                  to="/blog"
+                <a
+                  href="https://forms.gle/RQmPEszVTEjNSk2B6"
+                rel="noreferrer"
+                target="_blank"
                   className={({ isActive }) =>
                     isActive ? "nav-movil__active" : " "
                   }
                 >
-                  Blog
-                </NavLink>
+                  cita prèvia
+                </a>
               </li>
             </ul>
           </div>

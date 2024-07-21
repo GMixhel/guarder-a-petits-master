@@ -10,7 +10,7 @@ const Diference = () => {
   return (
     <>
       <h3 className="diference_section">
-        Descobreix que <br /> ens fa unics
+        Descobreix què <br /> ens fa únics
       </h3>
       <div className="diference container">
         <div className="diference_box">
@@ -19,9 +19,9 @@ const Diference = () => {
 
             <p className="diference_p">
               Volem que et sentis còmode i segur en tot moment! Oferim
-              flexibilitat total en els horaris. El nostre servei de bons per
+              ﬂexibilitat total en els horaris. El nostre servei de bons per
               hores permet a les famílies adaptar-se fàcilment al centre mentre
-              construeixen una relació de confiança amb nosaltres.
+              construeixen una relació de conﬁança amb nosaltre
             </p>
           </div>
 
@@ -35,14 +35,14 @@ const Diference = () => {
         </div>
         <div className="diference_box diference_box--green">
           <div className="diference_details">
-            <h5 className="diference_title">Sesions de Música</h5>
+            <h5 className="diference_title">Sessions de Música</h5>
 
             <p className="diference_p">
               La música és un recurs educatiu poderós que facilita el
               desenvolupament del llenguatge i habilitats motores. A través de
               cançons, ritmes i melodies, potenciem la comunicació gràcies a les
-              habilitats cognitives, emocionals I socials dels nens, promovent
-              la seva creativitat i amor per l’aprenentatge.
+              habilitats cognitives, emocionals I socials dels infants,
+              promovent la seva creativitat i amor per l’aprenentatge.
             </p>
           </div>
 
@@ -59,11 +59,11 @@ const Diference = () => {
             <h5 className="diference_title">Comunicació</h5>
 
             <p className="diference_p">
-              A Petits, mantenim una comunicació constant amb les famílies i les
-              nostres educadores estan sempre disponibles per a informar sobre
-              l'evolució dels petits. A més, les visites estan sempre
-              disponibles perquè puguin veure com creixen els seus fills mentre
-              tenim cura dells.
+              A “Petits”, mantenim una comunicació constant amb les famílies i
+              les nostres educadores estan sempre disponibles per a informar
+              sobre l'evolució dels petits. A més, les visites estan sempre
+              disponibles perquè puguin veure com creixen els seus ﬁlls mentre
+              tenim cura d’ells.
             </p>
           </div>
 
@@ -108,12 +108,13 @@ const Diference = () => {
               Moments de <span className="moments_span">Tendresa</span>!
             </h3>
             <p className="moments_p">
-              A Petits, ens encanta mantenir a les famílies conectades amb el
+              A “Petits”, ens encanta mantenir a les famílies connectades amb el
               dia a dia dels seus petits.Gràcies a la nostra moderna aplicació
               Tyra podem compartir fotos i vídeos de les activitats diàries,
               perquè els pares puguin veure com de divertit i educatiu és cada
-              moment a Petits. Així, sempre estaràs al corrent de les aventures
-              i aprenentatges dels teus fills!Np et perdis res mentre treballes¡
+              moment a “Petits”. Així, sempre estaràs al corrent de les
+              aventures i aprenentatges dels teus ﬁlls/es! No et perdis res
+              mentre treballes!
             </p>
           </div>
         </div>

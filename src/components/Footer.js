@@ -76,7 +76,7 @@ const Footer = () => {
                 <h5 className="footer_subtitle">On som</h5>
                 <div className="footer_items">
                   <p className="footer_p-info">
-                    L´horari d´atenció 8.00 a 9.00 h - 17.00 a 18.00 h
+                    L´horari d´atenció 8.30 a 18.00 h
                   </p>
                   <p className="footer_p-info">
                     C/Escoles ,12 · 080290 Cerdanyola del Vallès

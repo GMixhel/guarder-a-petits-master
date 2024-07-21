@@ -46,7 +46,7 @@ const Home = () => {
               </h2>
 
               <div className="hero_container-t">
-                <h2 className="hero_title">infancia!</h2>
+                <h2 className="hero_title">infància!</h2>
                 <img
                   className="hero_icon-caracol"
                   src={caracol}
@@ -56,7 +56,7 @@ const Home = () => {
             </div>
 
             <p className="hero_description">
-              Vine i descobreix Petits, on cada nen és especial <br />i cada
+              Vine i descobreix "Petits", on cada nen/a és especial <br />i cada
               moment compta. T'esperem amb els <br />
               braços oberts!
             </p>
@@ -69,7 +69,7 @@ const Home = () => {
             <img src={heroImg} className="hero_img-cont" />
 
             <a href="#heroKnow" className="hero_cta">
-              coneix-nos!
+              Coneix-nos!
             </a>
           </div>
         </div>
@@ -119,9 +119,11 @@ const Home = () => {
           <div className="social_box">
             <img className="social_icon" src={cediap} alt="frutas en un bol" />
             <p className="social_description">
-              <span className="bold">Colaboramos con CDIAP DAPSI</span> para
-              ofrecer atención temprana a niños con trastornos del desarrollo o
-              en riesgo de padecerlos.
+              <span className="bold">
+                Col·laborem amb CDIAP DAPSI Cerdanyola {""}
+              </span>
+               garantir atenció primerenca a nens amb trastorns del
+              desenvolupament o en risc de patir-los.
             </p>
           </div>
 
@@ -134,7 +136,7 @@ const Home = () => {
             <p className="social_description">
               Arribar a la nostra guarderia és senzill i ràpid, estem ubicats en
               una de les
-              <span className="bold">zones més accessibles de Cerdanyola</span>
+              <span className="bold"> {" "}zones més accessibles de Cerdanyola</span>
             </p>
           </div>
         </div>
@@ -159,18 +161,18 @@ const Home = () => {
             Cobrim totes les àrees clau <br />
             d'aprenentatge i desenvolupament
             <br />
-            dels nostres alumnes.
+            del nostre alumnat.
           </h4>
 
           <p className="values_resume">
-            A Petits, entenem que cada nen té el seu propi ritme i estil
+            A “Petits”, entenem que cada nen/a té el seu propi ritme i estil
             d'aprenentatge. Respectem aquestes diferències i els ensenyem a
-            descobrir les seves pròpies eines per a superar cada desafiament.
-            Creiem que, Al igual que un cargolet, el logo que ens representa,
-            cada nen arribarà a la seva meta amb confiança i perseverança,
-            utilitzant els seus propis recursos per a avançar, pas a pas. Aquí
-            an Petits, cada alumno triomfa a la seva manera!No és millor el que
-            arriba abans, sino el que arriba quan está preparat.
+            descobrir les seves pròpies eines per a superar cada desaﬁament.
+            Creiem que, igual que un cargolet- el logo que ens representa-, cada
+            nen/a arribarà a la seva meta amb conﬁança i perseverança,
+            utilitzant els seus propis recursos per a avançar, pas a pas. Aquí a
+            “Petits”, cada alumnat triomfa a la seva manera! No és millor el que
+            arriba abans, sinó el que arriba quan està preparat.
           </p>
         </div>
 
