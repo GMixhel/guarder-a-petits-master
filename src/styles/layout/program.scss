@@ -141,12 +141,12 @@
         &_description--container {
                 padding-bottom: 3rem;
                 position: sticky;
-                top: 13rem;
+                top: 15rem;
             }
 
             &_details{
-                font-size: 1em;
-                line-height: 2rem;
+                font-size: 1.2em;
+                line-height: 2.3rem;
             }
         
 
@@ -157,7 +157,7 @@
         }
 
         &_name{
-            font-size: 1.05em;
+            font-size: 1.5em;
             margin-bottom: 1.5rem;
         }
 
@@ -165,5 +165,6 @@
             padding: 3rem 2rem;
             border-radius: 5rem / 3rem 5rem 2rem 3rem;
         }
+
     }
 }

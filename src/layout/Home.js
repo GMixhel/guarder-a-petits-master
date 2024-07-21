@@ -95,7 +95,7 @@ const Home = () => {
               alt="frutas en un bol"
             />
             <p className="social_description">
-              brindem <span className="bold">una dieta balancejada</span> per
+              Brindem <span className="bold">una dieta balancejada</span> per
               als nadons, garantint que cada mos contribueixi al seu creixement
               saludable
             </p>
