@@ -137,6 +137,7 @@
          align-items: center;
          width: 100%;
          background-color: v.$blue;
+         
      }
 
 
@@ -145,8 +146,12 @@
         background-color: v.$blue;
         height: fit-content;
         width: 95%;
-        margin-top: 0.5rem;
+        top: 0.5rem;
+        margin-left: 0.6rem;
+        margin-top: 0.3rem;
         border-radius: 1rem;
+        position: fixed;
+        z-index: 3;
 
         &_nav-container{
             width: 100%;
@@ -177,13 +182,14 @@
               
             
                 &_up {
-                    width: 3.5rem;
-                    margin: 2rem;
+                    display: none;
                 }
             
                 &_call {
                     width: 3.5rem;
                     margin: 2rem;
+                    left: auto;
+                    right: 0;
                 }
             }
             

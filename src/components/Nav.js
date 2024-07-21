@@ -10,15 +10,7 @@ import facebookIco from "../images/petit-facebook.svg";
 
 const Nav = ({ show, setShow }) => {
 
-  // const close = () => {
-  //   setShow(true)
-  // }
-  
-  console.log(show);
-
-
-
-  return (
+   return (
     <>
       <div
         onClick={() => setShow(false)}

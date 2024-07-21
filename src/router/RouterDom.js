@@ -2,6 +2,8 @@ import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from '../layout/Home';
 import About from '../layout/About';
+import ScrollToTop from '../components/ScrollToTop';
+
 
 
 
@@ -9,6 +11,7 @@ export const RouterDom = () => {
   return (
     <BrowserRouter>
       {/*Header */}
+      <ScrollToTop />
 
       {/*Contenido central*/}
 

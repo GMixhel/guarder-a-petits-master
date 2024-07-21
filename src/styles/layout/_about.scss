@@ -79,6 +79,7 @@
       justify-items: center;
       align-items: center;
       margin-bottom: 3.5rem;
+      margin-top: 8rem;
 
       &_data{
         justify-content: center;
@@ -93,12 +94,11 @@
       &_title-d{
         margin: 0 auto;
         padding-top: 2rem;
-        margin-left: -1rem;
+        margin-left: -0.8rem;
       }
-            &_tilte {
-              font-size: 2em;
-              text-align: center;
-            }
+
+
+          
       
             &_ilustrattion {
               margin: 6.5rem 0;
@@ -109,6 +109,11 @@
               margin-top: -5rem;
             }
             }
+
+            .about  .about_title {
+                font-size: 2.5em;
+      
+              }
 
         
 }
