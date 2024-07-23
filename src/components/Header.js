@@ -14,6 +14,15 @@ const Header = () => {
 
       window.onscroll = function () {
         let scroll = document.documentElement.scrollTop;
+      let scrollMaxY =
+         document.documentElement.scrollHeight -
+         document.documentElement.clientHeight;
+
+      
+        let scrollD = scrollMaxY - 300
+        console.log(scrollD)
+        console.log(scroll)
+        
         if (scroll > 300) {
           up.style.transform = "scale(1)";
           up.style.opacity = "1";
@@ -21,10 +30,18 @@ const Header = () => {
           movil.style.opacity = "1";
         } else if (scroll < 500) {
           up.style.transform = "scale(0)";
-           up.style.opacity = "0";
+          up.style.opacity = "0";
           movil.style.transform = "scale(0)";
           movil.style.opacity = "0";
         }
+
+        if (scroll > scrollD) {
+          up.style.transform = "scale(0)";
+          up.style.opacity = "0";
+          movil.style.transform = "scale(0)";
+          movil.style.opacity = "0";
+        }
+ 
       };
     }, []);
   
@@ -75,7 +92,7 @@ const [show, setShow]= useState(false)
                 rel="noreferrer"
                 target="_blank"
               >
-                cita prèvia
+                Cita prèvia
               </a>
             </div>
           </div>

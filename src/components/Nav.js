@@ -64,7 +64,7 @@ const Nav = ({ show, setShow }) => {
                      isActive ? "nav-movil__active" : " "
                    }
                  >
-                   cita prèvia
+                   Cita prèvia
                  </a>
                </li>
              </ul>

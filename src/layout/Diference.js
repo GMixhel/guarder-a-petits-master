@@ -6,7 +6,9 @@ import video from "../images/video-petit.mp4";
 import videoIcon1 from "../images/amar.png";
 import videoIcon2 from "../images/amor.png";
 
+
 const Diference = () => {
+   
   return (
     <>
       <h3 className="diference_section">
@@ -97,6 +99,7 @@ const Diference = () => {
               ></video>
             </div>
             <img
+            
               className="video_icon video_icon-b"
               src={videoIcon2}
               alt="corazon con mensaje"

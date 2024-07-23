@@ -1,7 +1,9 @@
 import React from 'react'
 import footerImg from '../images/message-icon.png'
 
+
 const Footer = () => {
+
   return (
     <footer className="footer  ">
       <div className="footer_a">
@@ -87,7 +89,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer_privacy">
+          <div  className="footer_privacy">
             <div className=" flex container">
               <p className="footer_copyrite">PETITS © Copyright 2024 </p>
               <a href="#" className="footer_link-privacy">
