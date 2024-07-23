@@ -54,7 +54,7 @@ const Footer = () => {
                     youtube
                   </a>
                   <a
-                    href="https://www.instagram.com/petitnins/"
+                    href="https://www.instagram.com/petitscerdanyola?igsh=MWo3eDRuYndnZDVmcA%3D%3D&utm_source=qr"
                     rel="noreferrer"
                     target="_blank"
                     className="footer_link"

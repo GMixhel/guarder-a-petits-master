@@ -108,7 +108,7 @@ const [show, setShow]= useState(false)
         <a href="#" className="hero_up">
           <img
             src={ankor}
-            alt="flecha que indica hacia arriba"
+            alt="ve al inicio de la página"
             className="home_ankor-img"
           />
         </a>
@@ -120,7 +120,7 @@ const [show, setShow]= useState(false)
         >
           <img
             src={call}
-            alt="imagen de un telefono"
+            alt="chatea con nosotros"
             className="home_ankor-img"
           />
         </a>

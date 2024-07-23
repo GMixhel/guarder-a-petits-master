@@ -68,7 +68,12 @@ const Home = () => {
 
             <img src={heroImg} className="hero_img-cont" />
 
-            <a href="#heroKnow" className="hero_cta">
+            <a
+              href="https://forms.gle/RQmPEszVTEjNSk2B6"
+              rel="noreferrer"
+              target="_blank"
+              className="hero_cta"
+            >
               Coneix-nos!
             </a>
           </div>
@@ -122,7 +127,7 @@ const Home = () => {
               <span className="bold">
                 Col·laborem amb CDIAP DAPSI Cerdanyola {""}
               </span>
-               garantir atenció primerenca a nens amb trastorns del
+              garantir atenció primerenca a nens amb trastorns del
               desenvolupament o en risc de patir-los.
             </p>
           </div>
@@ -136,7 +141,7 @@ const Home = () => {
             <p className="social_description">
               Arribar a la nostra guarderia és senzill i ràpid, estem ubicats en
               una de les
-              <span className="bold"> {" "}zones més accessibles de Cerdanyola</span>
+              <span className="bold"> zones més accessibles de Cerdanyola</span>
             </p>
           </div>
         </div>
