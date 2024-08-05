@@ -4,16 +4,19 @@ import Footer from '../components/Footer';
 import imgAbout from '../images/about-img.png';
 import Gallery from './Gallery';
 import Team from './Team';
+import PageTranstitions from '../components/PageTranstitions';
 
 const About = () => {
   return (
-    <>
+    <PageTranstitions>
+      
       <Header />
 
       <div className="about container">
         <div className="about_data">
           <h2 className="about_title">
-            La Nostre<br />
+            La Nostre
+            <br />
             <span className="hero_title-d about_title-d">Filosofia</span>
           </h2>
 
@@ -47,7 +50,10 @@ const About = () => {
             prop, guiant i acompanyant als nens/es per a assegurar un entorn
             harmoniós i segur.
           </p>
-          <p className="about_p bold"> LEMA: SI VOLS APRENDRE NO T’OBLIDIS DE JUGAR</p>
+          <p className="about_p bold">
+            {" "}
+            LEMA: SI VOLS APRENDRE NO T’OBLIDIS DE JUGAR
+          </p>
         </div>
       </div>
 
@@ -63,7 +69,7 @@ const About = () => {
       <Team />
 
       <Footer />
-    </>
+    </PageTranstitions>
   );
 }
 

@@ -18,6 +18,7 @@ import Testimonials from './Testimonials';
 import Footer from '../components/Footer';
 import Lenis from 'lenis';
 import heroImg from '../images/swiper_gallery/SwiperGallery_9.jpg';
+import PageTranstitions from '../components/PageTranstitions';
 
 const Home = () => {
   // //---smooth scroll with Lenis
@@ -33,7 +34,8 @@ const Home = () => {
 
    
   return (
-    <>
+    <PageTranstitions 
+    >
       <div className="hero">
         <div className="hero_container">
           <Header />
@@ -206,16 +208,17 @@ const Home = () => {
         className="waterBrand"
       />
 
+      <Diference />
+
       <Program />
 
       <Slide />
 
       <Testimonials />
 
-      <Diference />
-
       <Footer />
-    </>
+      
+    </PageTranstitions>
   );
 }
 

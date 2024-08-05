@@ -6,8 +6,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 5rem;
-    padding: 15rem 0  20rem 0;
-    background-position: 50%;
+    padding: 15rem 0  12rem 0;
+    background-position: 45%;
 
     &_slider{
         display: none;
@@ -57,11 +57,11 @@
          margin-top: 10rem;
      }
      &_box-grid4{
-         margin-top: -17.5rem;
+         margin-top: -18.5rem;
          margin-bottom: 1rem;
      }
      &_box-grid1{
-         margin-top: -10.3rem;
+         margin-top: -11.3rem;
          margin-bottom: 1rem;
      }
    
@@ -161,8 +161,10 @@
 @include m.movil {
 
     .testimonials {
-        margin-top: 0;
-    padding: 5rem 0 8rem 0;
+            border-radius: 2.5rem;
+            margin-top: 0;
+            padding: 5rem 0 8rem 0;
+            background-position: 48%;
     &_boxes-container {
         display: none;
     }

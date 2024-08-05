@@ -79,7 +79,7 @@ const Diference = () => {
         </div>
       </div>
 
-      <div className="moments">
+      <div className="moments container">
         <div className="moments_container container">
           <div className="moments_video">
             <img
@@ -88,7 +88,7 @@ const Diference = () => {
               alt="carita cariñosa"
             />
             <div className="video__container">
-              <div className="video_decoration">hola</div>
+              <div className="video_decoration">--</div>
               <video
                 src={video}
                 loop

@@ -1,28 +1,36 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter, useLocation } from 'react-router-dom';
 import Home from '../layout/Home';
 import About from '../layout/About';
 import ScrollToTop from '../components/ScrollToTop';
+import { AnimatePresence } from 'framer-motion';
 
 
 
 
 export const RouterDom = () => {
+
+  const location = useLocation()
   return (
-    <BrowserRouter>
-      {/*Header */}
-      <ScrollToTop />
+    <div>
+    
+        {/*Header */}
+        <ScrollToTop />
 
-      {/*Contenido central*/}
+        {/*Contenido central*/}
+        <AnimatePresence initial={false} mode='wait'>
+          <Routes location={location} key={location.pathname}>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/inicio" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route
+              path="*"
+              element={<h2 className="error__title">Error 404</h2>}
+            />
+          </Routes>
+        </AnimatePresence>
 
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/inicio" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<h2 className="error__title">Error 404</h2>} />
-      </Routes>
-
-      {/*Footer*/}
-    </BrowserRouter>
+        {/*Footer*/}
+    </div>
   );
 }

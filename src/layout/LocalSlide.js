@@ -1,12 +1,13 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCreative } from "swiper/modules";
 
 
 import "swiper/css";
-import "swiper/css/effect-creative";
+
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 
 
@@ -14,24 +15,7 @@ const LocalSlide = () => {
   return (
     <>
       <div className="slideImg_container">
-        <Swiper
-          grabCursor={true}
-          effect={"creative"}
-          creativeEffect={{
-            prev: {
-              shadow: true,
-              translate: ["-125%", 0, -800],
-              rotate: [0, 0, -90],
-            },
-            next: {
-              shadow: true,
-              translate: ["125%", 0, -800],
-              rotate: [0, 0, 90],
-            },
-          }}
-          modules={[EffectCreative]}
-          className="mySwiper6"
-        >
+        <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
           <SwiperSlide>
             <img
               id="modern-style-1"
@@ -48,8 +32,8 @@ const LocalSlide = () => {
               alt="Imagen del local"
               className="swipwer_img"
             />
-                  </SwiperSlide>
-                  
+          </SwiperSlide>
+
           <SwiperSlide>
             <img
               id="modern-style-1"
