@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import Header from '../components/Header';
 import caracol from "../images/caracol-petits.svg"
 import frutaIcon from "../images/fruta.svg"
@@ -18,7 +17,7 @@ import Testimonials from './Testimonials';
 import Footer from '../components/Footer';
 import Lenis from 'lenis';
 import heroImg from '../images/swiper_gallery/SwiperGallery_9.jpg';
-import PageTranstitions from '../components/PageTranstitions';
+import { motion } from "framer-motion";
 
 const Home = () => {
   // //---smooth scroll with Lenis
@@ -34,12 +33,11 @@ const Home = () => {
 
    
   return (
-    <PageTranstitions 
-    >
+    < >
       <div className="hero">
         <div className="hero_container">
-        <Header />
-          <div className="hero_value-proposal container-hero container-movil">
+          <Header />
+          <div  className="hero_value-proposal container-hero container-movil">
             <div className="hero_title-box">
               <h2 className="hero_title">
                 Especialistes <br />
@@ -216,8 +214,7 @@ const Home = () => {
       <Testimonials />
 
       <Footer />
-
-    </PageTranstitions>
+    </>
   );
 }
 
