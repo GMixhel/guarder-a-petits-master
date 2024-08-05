@@ -1,21 +1,38 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import flexIcon from '../images/petits-flexibilidad.svg'
 import musIcon from '../images/petits-music.svg'
 import comuIcon from '../images/petits-where.svg'
 import video from "../images/video-petit.mp4";
 import videoIcon1 from "../images/amar.png";
 import videoIcon2 from "../images/amor.png";
+import { motion, useInView } from 'framer-motion';
+import { scale, scale2, translate } from '../components/Anime';
 
 
 const Diference = () => {
+
+  const diferContainer = useRef(null);
+  const isInView2 = useInView(diferContainer, {once:true}); 
+  const momentContainer = useRef(null);
+  const isInView3 = useInView(momentContainer, {once:true}); 
    
   return (
     <>
       <h3 className="diference_section">
         Descobreix què <br /> ens fa únics
       </h3>
-      <div className="diference container">
-        <div className="diference_box">
+      <div ref={diferContainer} className="diference container">
+        <motion.div
+          variants={translate}
+          initial="initial"
+          animate={isInView2 ? "open" : "closed"}
+          transition={{
+            delay: 0.2,
+
+            ease: [0.43, 0.13, 0.25, 0.96],
+          }}
+          className="diference_box"
+        >
           <div className="diference_details">
             <h5 className="diference_title">Flexibilitat Horària</h5>
 
@@ -34,8 +51,18 @@ const Diference = () => {
               alt="icono que simboliza la propuesta de valor"
             />
           </div>
-        </div>
-        <div className="diference_box diference_box--green">
+        </motion.div>
+
+        <motion.div
+          variants={translate}
+          initial="initial"
+          animate={isInView2 ? "open" : "closed"}
+          transition={{
+            delay: 0.23,
+            ease: [0.43, 0.13, 0.25, 0.96],
+          }}
+          className="diference_box diference_box--green"
+        >
           <div className="diference_details">
             <h5 className="diference_title">Sessions de Música</h5>
 
@@ -55,8 +82,17 @@ const Diference = () => {
               alt="icono que simboliza la propuesta de valor"
             />
           </div>
-        </div>
-        <div className="diference_box">
+        </motion.div>
+        <motion.div
+          variants={translate}
+          initial="initial"
+          animate={isInView2 ? "open" : "closed"}
+          transition={{
+            delay: 0.25,
+            ease: [0.43, 0.13, 0.25, 0.96],
+          }}
+          className="diference_box"
+        >
           <div className="diference_details">
             <h5 className="diference_title">Comunicació</h5>
 
@@ -71,15 +107,24 @@ const Diference = () => {
 
           <div className="diference_icon-container">
             <img
+              ref={momentContainer}
               className="diference_icon"
               src={comuIcon}
               alt="icono que simboliza la propuesta de valor"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="moments container">
+      <motion.div
+        variants={scale2}
+        initial="initial"
+        animate={isInView3 ? "open" : "closed"}
+        transition={{
+          ease: [0.43, 0.13, 0.25, 0.96],
+        }}
+        className="moments container"
+      >
         <div className="moments_container container">
           <div className="moments_video">
             <img
@@ -99,7 +144,6 @@ const Diference = () => {
               ></video>
             </div>
             <img
-            
               className="video_icon video_icon-b"
               src={videoIcon2}
               alt="corazon con mensaje"
@@ -121,7 +165,7 @@ const Diference = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -17,8 +17,10 @@ import Testimonials from './Testimonials';
 import Footer from '../components/Footer';
 import Lenis from 'lenis';
 import heroImg from '../images/swiper_gallery/SwiperGallery_9.jpg';
-
+import { motion, useInView } from "framer-motion";
 import PageTranstitions from '../components/PageTranstitions';
+import { opacity, scale } from '../components/Anime';
+import { useRef } from 'react';
 
 const Home = () => {
   // //---smooth scroll with Lenis
@@ -32,6 +34,13 @@ const Home = () => {
   //     requestAnimationFrame(raf);
   //  }, [])
 
+  const container = useRef(null);
+  const servContainer = useRef(null);
+  const isInView = useInView(container) 
+  const isInView1 = useInView(servContainer) 
+
+
+
    
   return (
     <>
@@ -39,8 +48,20 @@ const Home = () => {
         <div className="hero">
           <div className="hero_container">
             <Header />
-            <div className="hero_value-proposal container-hero container-movil">
-              <div className="hero_title-box">
+            <div
+              ref={container}
+              className="hero_value-proposal container-hero container-movil"
+            >
+              <motion.div
+                variants={opacity}
+                initial="initial"
+                transition={{
+                  duration: 0.4,
+                  ease: [0.43, 0.13, 0.25, 0.96],
+                }}
+                animate={isInView ? "open" : "closed"}
+                className="hero_title-box"
+              >
                 <h2 className="hero_title">
                   Especialistes <br />
                   en <span className="hero_title-d">primera</span>
@@ -54,13 +75,23 @@ const Home = () => {
                     alt="icono de un caracol"
                   />
                 </div>
-              </div>
+              </motion.div>
 
-              <p className="hero_description">
+              <motion.p
+                variants={opacity}
+                initial="initial"
+                animate={isInView ? "open" : "closed"}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.1,
+                  ease: [0.43, 0.13, 0.25, 0.96],
+                }}
+                className="hero_description"
+              >
                 Vine i descobreix "Petits", on cada nen/a és especial <br />i
                 cada moment compta. T'esperem amb els <br />
                 braços oberts!
-              </p>
+              </motion.p>
 
               <p className="hero_description--movil">
                 Vine i descobreix Petits, on cada nen és especial i cada moment
@@ -157,12 +188,27 @@ const Home = () => {
 
         <div id="heroKnow" className="values container-movil">
           <div className="values_boxes values_boxes-1">
-            <img
+            <motion.img
+              variants={scale}
+              initial="initial"
+              animate={isInView1 ? "open" : "closed"}
+              transition={{
+                duration: 0.4,
+                delay: 0.08,
+                ease: [0.43, 0.13, 0.25, 0.96],
+              }}
               src={child4}
               alt="imagen de un bebé"
               className="value_child values_child--4"
             />
-            <img
+            <motion.img
+              variants={scale}
+              initial="initial"
+              animate={isInView1 ? "open" : "closed"}
+              transition={{
+                duration: 0.4,
+                ease: [0.43, 0.13, 0.25, 0.96],
+              }}
               src={child3}
               alt="imagen de un bebé"
               className="value_child values_child--3"
@@ -190,17 +236,41 @@ const Home = () => {
           </div>
 
           <div className="values_boxes values_boxes-3">
-            <img
+            <motion.img
+              variants={scale}
+              initial="initial"
+              animate={isInView1 ? "open" : "closed"}
+              transition={{
+                duration: 0.4,
+                delay: 0.12,
+                ease: [0.43, 0.13, 0.25, 0.96],
+              }}
               src={child1}
               alt="imagen de un bebé"
               className="value_child values_child--1"
             />
-            <img
+            <motion.img
+              variants={scale}
+              initial="initial"
+              animate={isInView1 ? "open" : "closed"}
+              transition={{
+                duration: 0.4,
+                delay: 0.15,
+                ease: [0.43, 0.13, 0.25, 0.96],
+              }}
               src={child2}
               alt="imagen de un bebé"
               className="value_child values_child--2"
             />
-            <img
+            <motion.img
+              variants={scale}
+              initial="initial"
+              animate={isInView1 ? "open" : "closed"}
+              transition={{
+                duration: 0.4,
+                delay: 0.15,
+                ease: [0.43, 0.13, 0.25, 0.96],
+              }}
               src={child5}
               alt="imagen de un bebé"
               className="value_child values_child--5"
@@ -209,6 +279,7 @@ const Home = () => {
         </div>
 
         <img
+          ref={servContainer}
           src={marcaAgua}
           alt="imagen de un caracol dibujado"
           className="waterBrand"
