@@ -262,15 +262,7 @@ const Home = () => {
               alt="imagen de un bebé"
               className="value_child values_child--2"
             />
-            <motion.img
-              variants={scale}
-              initial="initial"
-              animate={isInView1 ? "open" : "closed"}
-              transition={{
-                duration: 0.4,
-                delay: 0.15,
-                ease: [0.43, 0.13, 0.25, 0.96],
-              }}
+            <img
               src={child5}
               alt="imagen de un bebé"
               className="value_child values_child--5"
