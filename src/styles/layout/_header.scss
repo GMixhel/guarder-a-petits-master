@@ -1,24 +1,24 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 
-    &__logo{
+    &__logo {
         width: 6rem;
         padding: 3rem 0;
     }
 
-    &_nav-container{
+    &_nav-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
     }
 
-    &_menuIcon{
+    &_menuIcon {
         display: none;
     }
 }
@@ -47,9 +47,10 @@
     gap: 1.8rem;
 
 
-    &_menu{
+    &_menu {
         display: none;
     }
+
     &__item {
         font-size: 1.5em;
         color: v.$p;
@@ -114,37 +115,38 @@
 
 @include m.desktop {
 
-    .header{
+    .header {
         &__logo {
-                width: 5rem;
-            }
+            width: 5rem;
+        }
     }
 
-    .nav{
+    .nav {
         &__item {
-                font-size: 1.3em;
-    }}
-   
+            font-size: 1.3em;
+        }
+    }
+
 }
 
 @include m.tablet {}
 
 @include m.movil {
 
-     .container-hero-nav{
-         display: flex;
-         justify-content: space-between;       
-         width: 100%;
-         background-color: v.$blue;
-         
-     }
+    .container-hero-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: v.$blue;
 
-     header .top{
+    }
+
+    header .top {
         top: 0.5rem;
-     }
+    }
 
 
-    .header {   
+    .header {
         position: fixed;
         background-color: v.$blue;
         height: fit-content;
@@ -152,15 +154,15 @@
         top: 0.5rem;
         margin-left: 0.6rem;
         margin-top: 0.3rem;
-        border-radius: 1rem;      
+        border-radius: 1rem;
         z-index: 3;
 
-        &_nav-container{
+        &_nav-container {
             width: 100%;
 
         }
 
-       
+
 
         &__logo {
             width: 7rem;
@@ -173,34 +175,35 @@
             padding-right: 2rem;
         }
 
-        &__nav{
+        &__nav {
             display: none;
-            }
-            
-            .hero {
-                &_btn-contact {
-                    display: none;
-                }
+        }
 
-              
-            
-                &_up {
-                    display: none;
-                }
-            
-                &_call {
-                    width: 3.5rem;
-                    margin: 2rem;
-                    left: auto;
-                    right: 0;
-                }
-            }
-            
-            }
-            
-            
-            }
 
+
+    }
+
+    .hero {
+        &_btn-contact {
+            display: none;
+        }
+
+
+
+        &_up {
+            display: none;
+        }
+
+        &_call {
+            width: 3.5rem;
+            margin: 2rem;
+            left: auto;
+            right: 0;
+        }
+    }
+
+
+}
 
    
 
