@@ -18,10 +18,10 @@ const PageTranstitions = ({children}) => {
         scale: 1,
         opacity: 0,
       }}
-    //   transition={{
-    //     easings: "0.87, 0, 0.13, 1",
-    //     duration: 0.2,
-    //   }}
+      transition={{
+        easings: "0.87, 0, 0.13, 1",
+        duration: 0.2,
+      }}
     >
       {children}
     </motion.div>
