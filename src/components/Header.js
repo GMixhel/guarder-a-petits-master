@@ -7,6 +7,7 @@ import menuOpen from "../images/Grupo 128.svg";
 import Nav from './Nav'
 
 
+
 const Header = () => {
 
     useEffect(() => {

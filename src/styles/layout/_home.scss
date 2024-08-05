@@ -168,6 +168,7 @@
 
   .hero {
       grid-template-columns: 1fr;
+      height: min-content;
      
   
       &_btn-call {
@@ -196,6 +197,7 @@
         align-items: center;
         flex-direction: column;
         margin-top: 7rem;
+       
       }
   
       &_resources {
@@ -234,11 +236,10 @@
         margin-bottom: 5rem;
       }
   
-  
     }
   
     .social {
-      margin-top: 20rem;
+    
       &_link {
         margin: 0;
         padding: 1rem 0;
