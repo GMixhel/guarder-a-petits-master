@@ -133,28 +133,31 @@
 
      .container-hero-nav{
          display: flex;
-         justify-content: space-between;
-         align-items: center;
+         justify-content: space-between;       
          width: 100%;
          background-color: v.$blue;
          
      }
 
+     header .top{
+        top: 0.5rem;
+     }
 
-    .header {
-        justify-content: center;
+
+    .header {   
+        position: fixed;
         background-color: v.$blue;
         height: fit-content;
         width: 95%;
         top: 0.5rem;
         margin-left: 0.6rem;
         margin-top: 0.3rem;
-        border-radius: 1rem;
-        position: fixed;
+        border-radius: 1rem;      
         z-index: 3;
 
         &_nav-container{
             width: 100%;
+
         }
 
        

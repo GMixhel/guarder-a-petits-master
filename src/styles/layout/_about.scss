@@ -76,13 +76,13 @@
 @include m.movil {
     .about{
       grid-template-columns: 1fr;
-      justify-items: center;
+    
       align-items: center;
       margin-bottom: 3.5rem;
       margin-top: 8rem;
 
       &_data{
-        justify-content: center;
+
         align-items: center;
       }
 

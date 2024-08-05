@@ -1,11 +1,11 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import closeIcon from "../images/Grupo 178.svg"
 import logo from "../images/petits-logo.svg"
 import youtubeIco from "../images/petits-youtube.svg";
 import instagramIco from "../images/petis-instagram.svg";
 import facebookIco from "../images/petit-facebook.svg";
+
 
 
 const Nav = ({ show, setShow }) => {

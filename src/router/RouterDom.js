@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from '../layout/Home';
+import Header from "../components/Header";
 import About from '../layout/About';
 import ScrollToTop from '../components/ScrollToTop';
 import { AnimatePresence } from 'framer-motion';
@@ -14,7 +15,8 @@ export const RouterDom = () => {
   return (
     <div>
     
-        {/*Header */}
+      {/*Header */}
+
         <ScrollToTop />
 
         {/*Contenido central*/}

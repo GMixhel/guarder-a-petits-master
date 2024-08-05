@@ -38,8 +38,7 @@ const Home = () => {
     >
       <div className="hero">
         <div className="hero_container">
-          <Header />
-
+        <Header />
           <div className="hero_value-proposal container-hero container-movil">
             <div className="hero_title-box">
               <h2 className="hero_title">
@@ -217,7 +216,7 @@ const Home = () => {
       <Testimonials />
 
       <Footer />
-      
+
     </PageTranstitions>
   );
 }

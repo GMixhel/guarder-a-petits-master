@@ -5,19 +5,20 @@ const PageTranstitions = ({children}) => {
     <motion.div
       className="page"
       initial={{
-        scale: 0.9,
-        opacity: 1,
+        y: -400,
+        opacity: 0,
       }}
       animate={{
-        scale: 1,
+       y: 0,
         opacity: 1,
       }}
       exit={{
-        scale: 0.9,
-        opacity: 1,
+        y: -400,
+        opacity: 0,
       }}
       transition={{
-        easings: "0.83, 0, 0.17, 1",
+          easings: "0.83, 0, 0.17, 1",
+          duration: 0.2,
       }}
     >
       {children}

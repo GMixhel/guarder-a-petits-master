@@ -6,6 +6,7 @@ import call from '../images/Grupo 171.svg'
 import menuOpen from "../images/Grupo 128.svg";
 import Nav from './Nav'
 
+
 const Header = () => {
 
     useEffect(() => {
@@ -59,8 +60,8 @@ const [show, setShow]= useState(false)
       <header
         className={
           location.pathname === "/inicio" || location.pathname === "/"
-            ? "header container-hero"
-            : "header container-hero-nav"
+            ? " top header container-hero"
+            : "top header container-hero-nav"
         }
       >
         <div className="header_nav-container">
