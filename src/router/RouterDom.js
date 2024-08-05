@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from '../layout/Home';
 import About from '../layout/About';
 import ScrollToTop from '../components/ScrollToTop';
