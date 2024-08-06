@@ -24,8 +24,6 @@ const About = () => {
                 src={imgAbout}
                 alt="Imagen de niños divirtiendose"
                 className="about_img"
-                width= "300"
-                height= "355"
               />
             </div>
           </div>
