@@ -46,7 +46,7 @@ const Program = () => {
           <div className="program_card-container">
             <div className="program_card program_card--3">
               <h5 className="program_name program_name--3">
-                intercomunicació i Llenguatge
+                Intercomunicació i Llenguatge
               </h5>
               <p className="program_details">
                 A mesura que creixen, els nens milloren les seves habilitats de
