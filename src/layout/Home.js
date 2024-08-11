@@ -36,8 +36,8 @@ const Home = () => {
 
   const container = useRef(null);
   const servContainer = useRef(null);
-  const isInView = useInView(container) 
-  const isInView1 = useInView(servContainer) 
+  const isInView = useInView(container, { once: true }); 
+  const isInView1 = useInView(servContainer, { once: true }); 
 
 
 
@@ -215,7 +215,16 @@ const Home = () => {
             />
           </div>
 
-          <div className="values_boxes values_boxes-2">
+          <div
+            variants={scale}
+            initial="initial"
+            animate={isInView1 ? "open" : "closed"}
+            transition={{
+              duration: 0.3,
+              ease: [0.43, 0.13, 0.25, 0.96],
+            }}
+            className="values_boxes values_boxes-2"
+          >
             <h4 className="values_details">
               Cobrim totes les àrees clau <br />
               d'aprenentatge i desenvolupament

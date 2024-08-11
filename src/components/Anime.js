@@ -64,4 +64,25 @@ export const translate = {
     opacity: 1,
   },
 };
+export const translate2 = {
+  initial: {
+    y: 50,
+    opacity: 0,
+  },
+
+  open: {
+    y: 0,
+    opacity: 1,
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+  },
+
+
+  exit: {
+    y: 1,
+    opacity: 1,
+  },
+};
 

@@ -22,7 +22,7 @@ const Nav = ({ show, setShow }) => {
        >
          <div className="nav-movil container-hero">
            <div className="nav-movil__title">
-             <img src={logo} className="nav-movil_logo" />
+             <img src={logo} alt="marca de la empresa" className="nav-movil_logo" />
 
              <div onClick={() => setShow(false)} className="nav-movil__close">
                <img
@@ -39,7 +39,7 @@ const Nav = ({ show, setShow }) => {
                  <NavLink
                    to="/inicio"
                    className={({ isActive }) =>
-                     isActive ? "nav-movil__active" : " "
+                     isActive ? "nav-movil__active" : "string"
                    }
                  >
                    Inici
@@ -49,7 +49,7 @@ const Nav = ({ show, setShow }) => {
                  <NavLink
                    to="/about"
                    className={({ isActive }) =>
-                     isActive ? "nav-movil__active" : " "
+                     isActive ? "nav-movil__active" : "string"
                    }
                  >
                    Nosaltres
@@ -61,7 +61,7 @@ const Nav = ({ show, setShow }) => {
                    rel="noreferrer"
                    target="_blank"
                    className={({ isActive }) =>
-                     isActive ? "nav-movil__active" : " "
+                     isActive ? "nav-movil__active" : "string"
                    }
                  >
                    Cita prèvia

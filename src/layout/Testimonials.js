@@ -1,8 +1,13 @@
-import React from 'react'
-import fiveStart from '../images/five-start.svg'
+import { useRef } from 'react';
+import fiveStart from '../images/five-start.svg';
 import TestimonialsSlide from './TestimonialsSlide';
+import { motion, useInView } from "framer-motion";
+import { translate2 } from '../components/Anime';
 
 const Testimonials = () => {
+
+    const testiContainer = useRef(null);
+    const isInView2 = useInView(testiContainer, { once: true }); 
   return (
     <div className="testimonials">
       <div className="testimonials_container ">
@@ -14,6 +19,7 @@ const Testimonials = () => {
             Breu recopilació d'alguns dels testimonis dels nostres clients
           </p>
           <img
+            ref={testiContainer}
             src={fiveStart}
             alt="puntuación de 5 estrellas"
             className="testimonials_img"
@@ -21,7 +27,17 @@ const Testimonials = () => {
         </div>
 
         <div className="testimonials_boxes-container">
-          <div className="testimonials_box testimonials_box-grid6">
+          <motion.div
+            variants={translate2}
+            initial="initial"
+            animate={isInView2 ? "open" : "closed"}
+            transition={{
+              delay: 0.2,
+
+              ease: [0.43, 0.13, 0.25, 0.96],
+            }}
+            className="testimonials_box testimonials_box-grid6"
+          >
             <div className="testimonials_comas">"</div>
             <p className="testimonials_testimonials five-line">
               Els meus petits encantats de l'espai tant especial I bonic que té
@@ -42,9 +58,19 @@ const Testimonials = () => {
 
               <p className="testimonials_user">Lidia Martinez</p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="testimonials_box testimonials_box-grid5">
+          <motion.div
+            variants={translate2}
+            initial="initial"
+            animate={isInView2 ? "open" : "closed"}
+            transition={{
+              delay: 0.25,
+
+              ease: [0.43, 0.13, 0.25, 0.96],
+            }}
+            className="testimonials_box testimonials_box-grid5"
+          >
             <div className="testimonials_comas">"</div>
             <p className="testimonials_testimonials">
               Fuimos por recomendación de una amiga y nos encantó. El cuidado
@@ -59,10 +85,20 @@ const Testimonials = () => {
 
               <p className="testimonials_user">yessica rodriguez</p>
             </div>
-          </div>
+          </motion.div>
 
           <div className="testimonials_colum3">
-            <div className="testimonials_box testimonials_box-grid4">
+            <motion.div
+              variants={translate2}
+              initial="initial"
+              animate={isInView2 ? "open" : "closed"}
+              transition={{
+                delay: 0.28,
+
+                ease: [0.43, 0.13, 0.25, 0.96],
+              }}
+              className="testimonials_box testimonials_box-grid4"
+            >
               <div className="testimonials_comas">"</div>
               <p className="testimonials_testimonials">
                 Ambiente súper familiar, y las educadoras son un encanto, se
@@ -75,9 +111,19 @@ const Testimonials = () => {
                 <div className="testimonials_avatar">P</div>
                 <p className="testimonials_user">Pilar Campos</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="testimonials_box testimonials_box-grid3">
+            <motion.div
+              variants={translate2}
+              initial="initial"
+              animate={isInView2 ? "open" : "closed"}
+              transition={{
+                delay: 0.30,
+
+                ease: [0.43, 0.13, 0.25, 0.96],
+              }}
+              className="testimonials_box testimonials_box-grid3"
+            >
               <div className="testimonials_comas">"</div>
               <p className="testimonials_testimonials">
                 Para mí y mi Pequeño Ha Sido Una Etapa Maravillosa! Gracias por
@@ -90,11 +136,21 @@ const Testimonials = () => {
                 <div className="testimonials_avatar">K</div>
                 <p className="testimonials_user">Kristina Torres</p>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           <div className="testimonials_colum4">
-            <div className="testimonials_box testimonials_box-grid1">
+            <motion.div
+              variants={translate2}
+              initial="initial"
+              animate={isInView2 ? "open" : "closed"}
+              transition={{
+                delay: 0.35,
+
+                ease: [0.43, 0.13, 0.25, 0.96],
+              }}
+              className="testimonials_box testimonials_box-grid1"
+            >
               <div className="testimonials_comas">"</div>
               <p className="testimonials_testimonials">
                 Contento con el trato, la atención, la dedicación y la
@@ -111,7 +167,7 @@ const Testimonials = () => {
                 <div className="testimonials_avatar">J</div>
                 <p className="testimonials_user">JAY Mendez</p>
               </div>
-            </div>
+            </motion.div>
 
             <div className="testimonials_box testimonials_box-grid2">
               <h5 className="testimonials_comas">"</h5>

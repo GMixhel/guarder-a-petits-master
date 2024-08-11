@@ -87,91 +87,91 @@ const Slide = () => {
       >
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_1}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_2}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_3}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_4}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_5}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_6}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_7}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_8}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_9}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_10}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_11}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_12}
             alt="slide_image"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_13}
             alt="slide_image"
           />
@@ -181,7 +181,7 @@ const Slide = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            classname="slide_img-petis"
+            className="slide_img-petis"
             src={slide_image_15}
             alt="slide_image"
           />
