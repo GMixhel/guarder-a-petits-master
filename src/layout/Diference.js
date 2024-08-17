@@ -141,7 +141,6 @@ const Diference = () => {
                 autoPlay
                 muted 
                 playsInline
-                controls
                 preload="auto"
                 className="video"
               ></video>
