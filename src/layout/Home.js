@@ -44,10 +44,11 @@ const Home = () => {
    
   return (
     <>
-      <PageTranstitions>
+      
         <div className="hero">
           <div className="hero_container">
-            <Header />
+          <Header />
+          <PageTranstitions>
             <div
               ref={container}
               className="hero_value-proposal container-hero container-movil"
@@ -109,6 +110,7 @@ const Home = () => {
                 Coneix-nos!
               </a>
             </div>
+            </PageTranstitions>
           </div>
 
           <div className="hero_resources">
@@ -293,7 +295,7 @@ const Home = () => {
         <Slide />
 
         <Testimonials />
-      </PageTranstitions>
+     
 
       <Footer />
     </>

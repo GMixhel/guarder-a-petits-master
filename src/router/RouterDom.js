@@ -1,5 +1,5 @@
 
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation} from "react-router-dom";
 import Home from "../layout/Home";
 import Ankors from "../components/Ankors";
 import About from "../layout/About";
@@ -16,6 +16,7 @@ export const RouterDom = () => {
 
       {/*Contenido central*/}
       <AnimatePresence initial={false} mode="wait">
+      
         <Routes location={location} key={location.pathname}>
           <Route exact path="/" element={<Home />} />
           <Route path="/inicio" element={<Home />} />
