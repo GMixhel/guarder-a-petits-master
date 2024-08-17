@@ -294,8 +294,7 @@ const Home = () => {
 
         <Slide />
 
-        <Testimonials />
-     
+        <Testimonials />     
 
       <Footer />
     </>

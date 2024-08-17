@@ -245,6 +245,10 @@ border-radius: 5rem / 3rem 7rem 5rem 3rem;
             width: 100%;
             border-radius:0;
             padding: 0;
+
+            &_p{
+                margin-bottom: 5rem;
+            }
     
             &_container {
                 width: 85%;
@@ -254,7 +258,6 @@ border-radius: 5rem / 3rem 7rem 5rem 3rem;
                 flex-flow: column-reverse;
                 justify-items: center;
                 align-items: center;
-                gap: 5rem ;
             }
 
             &_title{

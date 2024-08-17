@@ -136,10 +136,13 @@ const Diference = () => {
               <div className="video_decoration">--</div>
               <video
                 src={video}
-                loop
                 type="video/mp4"
+                loop
                 autoPlay
-                muted
+                muted 
+                playsInline
+                controls
+                preload="auto"
                 className="video"
               ></video>
             </div>
