@@ -22,7 +22,11 @@ const Nav = ({ show, setShow }) => {
        >
          <div className="nav-movil container-hero">
            <div className="nav-movil__title">
-             <img src={logo} alt="marca de la empresa" className="nav-movil_logo" />
+             <img
+               src={logo}
+               alt="marca de la empresa"
+               className="nav-movil_logo"
+             />
 
              <div onClick={() => setShow(false)} className="nav-movil__close">
                <img
@@ -74,7 +78,7 @@ const Nav = ({ show, setShow }) => {
              <ul className="nav-movil__socialMedia">
                <li className="nav-movil__media">
                  <a
-                   href="mailto:gmra9329@gmail.com"
+                   href="mailto:info@petitscerdanyola.com"
                    className="nav-movil__mediaLink nav-movil__mediaLink--margin"
                  >
                    info@petitscerdanyola.com
